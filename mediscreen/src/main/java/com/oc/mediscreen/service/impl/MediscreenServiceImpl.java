@@ -13,19 +13,17 @@ public class MediscreenServiceImpl implements MediscreenService {
 
 
 
-    private PatientProxy patientProxy;
+    private final PatientProxy patientProxy;
 
 
     public MediscreenServiceImpl(PatientProxy patientProxy) {
         this.patientProxy = patientProxy;
     }
 
-    public MediscreenServiceImpl() {
-    }
 
     @Override
     public List<Patient> getPatientList() {
-        List<Patient> patientList = patientProxy.getPatientList();
+        List<Patient> patientList = (List<Patient>) patientProxy.getPatientList();
         return patientList;
     }
 

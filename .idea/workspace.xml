@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="" />
+    <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/static/css/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd32d4ce-30ad-459c-a73a-967f757066da.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd32d4ce-30ad-459c-a73a-967f757066da.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe8edd18-a591-44ad-958a-5c010194d22c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe8edd18-a591-44ad-958a-5c010194d22c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/MediscreenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/MediscreenApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +30,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -45,38 +66,40 @@
     </option>
   </component>
   <component name="ProjectId" id="29jz95SSVXrH258znNjCHqn90Du" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/templates/patient",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools",
-    "spring.configuration.checksum": "fac5a2b2f510001b2ed01f027fc0e221"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fac5a2b2f510001b2ed01f027fc0e221&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\guile\OneDrive\Bureau\Formation\P9\Mediscreen\mediscreen\src\main\resources\static\css" />
       <recent name="C:\Users\guile\OneDrive\Bureau\Formation\P9\Mediscreen\mediscreen\src\main\resources\templates\patient" />
     </key>
   </component>
@@ -129,20 +152,46 @@
       <workItem from="1653642944278" duration="104000" />
       <workItem from="1653643064412" duration="141000" />
       <workItem from="1653643223708" duration="3917000" />
-      <workItem from="1653648757126" duration="985000" />
+      <workItem from="1653648757126" duration="1305000" />
+      <workItem from="1653650348488" duration="57000" />
+      <workItem from="1653652344593" duration="2616000" />
+      <workItem from="1653654982655" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java</url>
+          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java</url>
           <line>27</line>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

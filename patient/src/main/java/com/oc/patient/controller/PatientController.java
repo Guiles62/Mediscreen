@@ -24,7 +24,8 @@ public class PatientController {
     @GetMapping(value = "/patient/list")
     public List<Patient> getPatientList() {
         logger.info("Get patient list");
-        return patientService.getPatientList();
+        List<Patient> patientList = patientService.getPatientList();
+        return patientList;
     }
 
 
