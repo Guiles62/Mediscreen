@@ -38,8 +38,14 @@ public class MediscreenServiceImpl implements MediscreenService {
     }
 
     @Override
-    public Patient updatePatient(int id) {
-        return patientProxy.updatePatient(id);
+    public Patient updatePatient(int id, Patient patient) {
+        Patient patientForUpdate = patientProxy.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
+        patientForUpdate.setFirstname(patient.getFirstname());
+        patientForUpdate.setLastname(patient.getLastname());
+        patientForUpdate.setAddress(patient.getAddress());
+        patientForUpdate.setGender(patient.getGender());
+        patientForUpdate.setPhone(patient.getPhone());
+        return patientProxy.updatePatient(patientForUpdate);
     }
 
     @Override

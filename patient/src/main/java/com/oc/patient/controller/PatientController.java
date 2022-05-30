@@ -42,11 +42,10 @@ public class PatientController {
         return patientService.addPatient(family,given,dob,sex,address,phone);
     }
 
-    @PostMapping(value = "patient/update/{id}")
-    public Patient updatePatient(@PathVariable("id") int id) {
+    @PostMapping(value = "patient/update")
+    public Patient updatePatient(@RequestBody Patient patient) {
         logger.info("update patient");
-        Patient patient = patientService.findPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
-        return patientService.updatePatient(id, patient);
+        return patientService.updatePatient(patient);
     }
 
     @GetMapping(value = "/patient/delete/{id}")

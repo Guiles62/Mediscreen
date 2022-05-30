@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Informations</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" >
+</head>
+<body>
+<div class="container">
+
+    <img src="../../css/logo.jpg" class="mx-auto d-block" >
+    <h1 style="margin-left: 490px">Patient</h1>
+    <div style="width: 40%; margin-left: 350px" class="border border-dark">
+            <tr th:object="${patient}">
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label; font-weight-bold">Id :</label>
+                <td th:text="${patient.patientId}"></td>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label; font-weight-bold">Firstname :</label>
+                    <td th:text="${patient.firstname}"></td>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label; font-weight-bold">Lastname :</label>
+                <td th:text="${patient.lastname}"></td>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label; font-weight-bold">Birthday :</label>
+                <td th:text="${patient.birthday}"></td>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label; font-weight-bold">Gender :</label>
+                <td th:text="${patient.gender}"></td>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label; font-weight-bold">Address :</label>
+                <td th:text="${patient.address}"></td>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label; font-weight-bold">Phone :</label>
+                <td th:text="${patient.phone}"></td>
+                </div>
+            </tr>
+    </div>
+    <div style="margin-left: 520px; margin-top: 10px">
+        <a class="btn btn-primary btn-sm" href="/patient/list">Return</a>
+    </div>
+</div>
+</body>
+</html>

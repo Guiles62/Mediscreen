@@ -42,16 +42,8 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public Patient updatePatient(int id, Patient patient) {
-        Patient patient1 = findPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
-        LocalDate birthday = patient.getBirthday();
-        patient1.setFirstname(patient.getFirstname());
-        patient1.setLastname(patient.getLastname());
-        patient1.setBirthday(birthday);
-        patient1.setAddress(patient.getAddress());
-        patient1.setGender(patient.getGender());
-        patient1.setPhone(patient.getPhone());
-        return patientRepository.save(patient1);
+    public Patient updatePatient(Patient patient) {
+        return patientRepository.save(patient);
     }
 
     @Override

@@ -10,32 +10,25 @@
 <div class="container">
 
     <img src="../../css/logo.jpg" class="mx-auto d-block" >
-    <div class="row">
+    <div class="row" style="width: 1000px; padding-left: 200px; padding-right: 50px">
         <a href="/patient/add" class="btn btn-primary btn-sm">Add New</a>
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>Id</th>
                 <th>Firstname</th>
                 <th>Lastname</th>
-                <th>Birthday</th>
-                <th>Gender</th>
-                <th>Address</th>
-                <th>Phone</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="patient : ${patients}">
-                <td style="width: 10%" th:text="${patient.getPatientId}"></td>
                 <td th:text="${patient.getFirstname}"></td>
                 <td th:text="${patient.getLastname}"></td>
-                <td th:text="${patient.getBirthday}"></td>
-                <td th:text="${patient.getGender}"></td>
-                <td th:text="${patient.getAddress}"></td>
-                <td th:text="${patient.getPhone}"></td>
                 <td style="width: 15%" class="text-center">
+                    <p style="width: 150px">
+                    <a th:href="@{/patient/{id}(id=${patient.patientId})}">View</a>&nbsp;|&nbsp;
                     <a th:href="@{/patient/update/{id}(id=${patient.patientId})}">Edit</a>&nbsp;|&nbsp;
                     <a th:href="@{/patient/delete/{id}(id=${patient.patientId})}">Delete</a>
+                    </p>
                 </td>
             </tr>
             </tbody>

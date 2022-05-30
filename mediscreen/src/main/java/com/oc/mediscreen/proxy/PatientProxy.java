@@ -23,8 +23,8 @@ public interface PatientProxy {
     Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam String dob,
                        @RequestParam String sex, @RequestParam String address, @RequestParam String phone);
 
-    @PostMapping(value = "patient/update/{id}")
-    Patient updatePatient(@PathVariable int id);
+    @PostMapping(value = "patient/update")
+    Patient updatePatient(@RequestBody Patient patient);
 
     @GetMapping(value = "/patient/delete/{id}")
     void deletePatient(@PathVariable int id);
