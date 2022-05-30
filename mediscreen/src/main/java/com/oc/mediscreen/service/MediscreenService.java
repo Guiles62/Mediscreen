@@ -13,6 +13,7 @@ public interface MediscreenService {
     Optional<Patient> getPatientById(@PathVariable int id);
     Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam String dob,
                        @RequestParam String sex, @RequestParam String address, @RequestParam String phone);
-    Patient updatePatient(@PathVariable int id, Patient patient);
+    Patient updatePatient(@PathVariable("id") int id,@RequestParam String firstname, @RequestParam String lastname, @RequestParam String birthday,
+                          @RequestParam String gender, @RequestParam String address, @RequestParam String phone);
     void deletePatient(@PathVariable int id);
 }

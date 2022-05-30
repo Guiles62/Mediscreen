@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,30 +66,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools",
-    "spring.configuration.checksum": "fac5a2b2f510001b2ed01f027fc0e221"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fac5a2b2f510001b2ed01f027fc0e221&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -158,7 +153,8 @@
       <workItem from="1653652344593" duration="2616000" />
       <workItem from="1653654982655" duration="10000" />
       <workItem from="1653655038734" duration="65000" />
-      <workItem from="1653893540115" duration="10802000" />
+      <workItem from="1653893540115" duration="10928000" />
+      <workItem from="1653907409116" duration="2812000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -167,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653655090289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add templates">
+      <created>1653904494523</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653904494523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +201,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feign ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="feign ok" />
+    <MESSAGE value="Add templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add templates" />
   </component>
 </project>

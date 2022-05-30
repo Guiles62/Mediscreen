@@ -4,7 +4,10 @@ import com.oc.mediscreen.model.Patient;
 import com.oc.mediscreen.proxy.PatientProxy;
 import com.oc.mediscreen.service.MediscreenService;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -38,13 +41,15 @@ public class MediscreenServiceImpl implements MediscreenService {
     }
 
     @Override
-    public Patient updatePatient(int id, Patient patient) {
+    public Patient updatePatient(int id,String firstname,String lastname,String birthday, String gender,String address,String phone) {
         Patient patientForUpdate = patientProxy.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
-        patientForUpdate.setFirstname(patient.getFirstname());
-        patientForUpdate.setLastname(patient.getLastname());
-        patientForUpdate.setAddress(patient.getAddress());
-        patientForUpdate.setGender(patient.getGender());
-        patientForUpdate.setPhone(patient.getPhone());
+        patientForUpdate.setFirstname(firstname);
+        patientForUpdate.setLastname(lastname);
+        patientForUpdate.setGender(gender);
+        patientForUpdate.setPhone(phone);
+        patientForUpdate.setAddress(address);
+        LocalDate birthdate = LocalDate.parse(birthday);
+        patientForUpdate.setBirthday(birthdate);
         return patientProxy.updatePatient(patientForUpdate);
     }
 

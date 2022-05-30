@@ -10,6 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
 import java.util.List;
 
 
@@ -44,17 +45,41 @@ public class MediscreenController {
     public String getPatientForm(@PathVariable("id") int id, Model model) {
         logger.info("get the form to update patient informations");
         Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+        patient.setBirthday(null);
         model.addAttribute("patient", patient);
         return "patient/update";
     }
 
     @PostMapping(value = "/patient/update/{id}")
-    public String updatePatient(@PathVariable("id") int id, @Valid Patient patient, BindingResult result, Model model) {
+    public String updatePatient(@PathVariable("id") int id,@RequestParam String firstname, @RequestParam String lastname, @RequestParam String birthday,
+                                @RequestParam String gender, @RequestParam String address, @RequestParam String phone, Model model) {
         logger.info("Validate Patient sent to controller and call service to save it");
-        if (!result.hasErrors()) {
-            mediscreenService.updatePatient(id,patient);
-            return "patient/view";
-        }
-        return "patient/update";
+        mediscreenService.updatePatient(id,firstname,lastname,birthday,gender,address,phone);
+        Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+        model.addAttribute("patient", patient);
+        return "patient/view";
+    }
+
+    @GetMapping(value = "/patient/add")
+    public String addPatientForm(Patient patient) {
+        logger.info("get the form to add a patient");
+        return "patient/add";
+    }
+
+    @PostMapping(value = "/patient/validate")
+    public String addPatient(@RequestParam String firstname, @RequestParam String lastname, @RequestParam String birthday,
+                             @RequestParam String gender, @RequestParam String address, @RequestParam String phone, Model model) {
+        logger.info("Validate patient to add it in database");
+            mediscreenService.addPatient(firstname,lastname,birthday,gender,address,phone);
+            model.addAttribute("patients", mediscreenService.getPatientList());
+            return "patient/list";
+    }
+
+    @GetMapping(value = "patient/delete/{id}")
+    public String deletePatient(@PathVariable("id") int id, Model model) {
+        logger.info("Delete the patient by id");
+        mediscreenService.deletePatient(id);
+        model.addAttribute("patients", mediscreenService.getPatientList());
+        return "patient/list";
     }
 }
