@@ -5,6 +5,7 @@ import com.oc.patient.service.PatientService;
 import org.apache.logging.log4j.LogManager;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import org.apache.logging.log4j.LogManager;
@@ -36,7 +37,7 @@ public class PatientController {
     }
 
     @PostMapping(value = "/patient/add")
-    public Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam String dob,
+    public Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam LocalDate dob,
                               @RequestParam String sex, @RequestParam String address, @RequestParam String phone) {
         logger.info("add a patient");
         return patientService.addPatient(family,given,dob,sex,address,phone);

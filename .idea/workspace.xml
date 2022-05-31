@@ -7,10 +7,15 @@
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +159,9 @@
       <workItem from="1653654982655" duration="10000" />
       <workItem from="1653655038734" duration="65000" />
       <workItem from="1653893540115" duration="10928000" />
-      <workItem from="1653907409116" duration="2812000" />
+      <workItem from="1653907409116" duration="2911000" />
+      <workItem from="1653910341643" duration="5000" />
+      <workItem from="1653981853097" duration="3249000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -170,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653904494523</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add templates">
+      <created>1653910317992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653910317992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,5 +217,16 @@
     <MESSAGE value="feign ok" />
     <MESSAGE value="Add templates" />
     <option name="LAST_COMMIT_MESSAGE" value="Add templates" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

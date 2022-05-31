@@ -36,20 +36,19 @@ public class MediscreenServiceImpl implements MediscreenService {
     }
 
     @Override
-    public Patient addPatient(String family, String given, String dob, String sex, String address, String phone) {
+    public Patient addPatient(String family, String given, LocalDate dob, String sex, String address, String phone) {
         return patientProxy.addPatient(family,given,dob,sex,address,phone);
     }
 
     @Override
-    public Patient updatePatient(int id,String firstname,String lastname,String birthday, String gender,String address,String phone) {
+    public Patient updatePatient(int id,Patient patient) {
         Patient patientForUpdate = patientProxy.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
-        patientForUpdate.setFirstname(firstname);
-        patientForUpdate.setLastname(lastname);
-        patientForUpdate.setGender(gender);
-        patientForUpdate.setPhone(phone);
-        patientForUpdate.setAddress(address);
-        LocalDate birthdate = LocalDate.parse(birthday);
-        patientForUpdate.setBirthday(birthdate);
+        patientForUpdate.setFirstname(patient.getFirstname());
+        patientForUpdate.setLastname(patient.getLastname());
+        patientForUpdate.setGender(patient.getGender());
+        patientForUpdate.setPhone(patient.getPhone());
+        patientForUpdate.setAddress(patient.getAddress());
+        patientForUpdate.setBirthday(patient.getBirthday());
         return patientProxy.updatePatient(patientForUpdate);
     }
 

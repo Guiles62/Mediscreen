@@ -5,8 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 
-
-
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -20,7 +19,7 @@ public interface PatientProxy {
     Optional<Patient> getPatientById(@PathVariable int id);
 
     @PostMapping(value = "/patient/add")
-    Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam String dob,
+    Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam LocalDate dob,
                        @RequestParam String sex, @RequestParam String address, @RequestParam String phone);
 
     @PostMapping(value = "patient/update")

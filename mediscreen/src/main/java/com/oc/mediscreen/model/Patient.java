@@ -1,12 +1,16 @@
 package com.oc.mediscreen.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
+import java.util.Date;
 
 public class Patient {
 
     private Integer patientId;
     private String firstname;
     private String lastname;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthday;
     private String gender;
     private String address;
