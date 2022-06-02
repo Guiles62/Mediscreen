@@ -1,12 +1,10 @@
 package com.oc.history.controller;
 
 import com.oc.history.model.Note;
-import com.oc.history.model.Patient;
 import com.oc.history.service.HistoryService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class HistoryController {
@@ -23,6 +21,11 @@ public class HistoryController {
         note.setCommentary(e);
         note.setPatId(patId);
         return historyService.addNote(note);
+    }
+
+    @GetMapping(value = "patHistory/{patId}")
+    public List<Note> getPatientNote(@PathVariable("patId") int patId){
+        return historyService.getPatientNote(patId);
     }
 
 }

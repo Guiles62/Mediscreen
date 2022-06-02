@@ -48,6 +48,12 @@
                 <td th:text="${patient.phone}"></td>
                 </div>
             </tr>
+        <tr th:each="note : ${notes}">
+            <div class="form-group">
+                <label class="col-sm-4 control-label; font-weight-bold">Notes :</label>
+                <td th:text="${note.commentary}"></td>
+            </div>
+        </tr>
     </div>
     <div style="margin-left: 520px; margin-top: 10px">
         <a class="btn btn-primary btn-sm" href="/patient/list">Return</a>

@@ -6,13 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/history/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/HistoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/HistoryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/MediscreenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/MediscreenApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/PatientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/PatientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/HistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +177,7 @@
       <workItem from="1654081735446" duration="756000" />
       <workItem from="1654083868258" duration="463000" />
       <workItem from="1654095942934" duration="1747000" />
-      <workItem from="1654154199986" duration="2280000" />
+      <workItem from="1654154199986" duration="6037000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -213,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654097633955</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Config class for Mongo">
+      <created>1654156684752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654156684752</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,15 +255,16 @@
     <MESSAGE value="Add templates" />
     <MESSAGE value="Add Dockerfile" />
     <MESSAGE value="Add history" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add history" />
+    <MESSAGE value="Add Config class for Mongo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Config class for Mongo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

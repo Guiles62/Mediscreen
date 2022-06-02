@@ -5,6 +5,8 @@ import com.oc.history.repository.HistoryRepository;
 import com.oc.history.service.HistoryService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class HistoryServiceImpl implements HistoryService {
 
@@ -17,5 +19,10 @@ public class HistoryServiceImpl implements HistoryService {
     @Override
     public Note addNote(Note note) {
         return historyRepository.save(note);
+    }
+
+    @Override
+    public List<Note> getPatientNote(int patId) {
+        return historyRepository.findPatientNotesByPatId(patId);
     }
 }

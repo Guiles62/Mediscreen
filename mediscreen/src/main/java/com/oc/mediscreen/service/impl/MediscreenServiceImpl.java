@@ -1,6 +1,8 @@
 package com.oc.mediscreen.service.impl;
 
+import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
+import com.oc.mediscreen.proxy.HistoryProxy;
 import com.oc.mediscreen.proxy.PatientProxy;
 import com.oc.mediscreen.service.MediscreenService;
 import org.springframework.stereotype.Service;
@@ -17,12 +19,13 @@ public class MediscreenServiceImpl implements MediscreenService {
 
 
     private final PatientProxy patientProxy;
+    private final HistoryProxy historyProxy;
 
 
-    public MediscreenServiceImpl(PatientProxy patientProxy) {
+    public MediscreenServiceImpl(PatientProxy patientProxy, HistoryProxy historyProxy) {
         this.patientProxy = patientProxy;
+        this.historyProxy = historyProxy;
     }
-
 
     @Override
     public List<Patient> getPatientList() {
@@ -55,5 +58,16 @@ public class MediscreenServiceImpl implements MediscreenService {
     @Override
     public void deletePatient(int id) {
         patientProxy.deletePatient(id);
+    }
+
+    @Override
+    public List<Note> getPatientNotes(int patId){
+        return historyProxy.getPatientNote(patId);
+    }
+
+    @Override
+    public Note addPatientNote(int patId, Note note) {
+        String patientNote = note.getCommentary();
+        return historyProxy.addNote(patId,patientNote);
     }
 }

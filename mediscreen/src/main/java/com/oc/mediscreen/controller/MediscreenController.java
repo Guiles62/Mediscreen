@@ -1,5 +1,6 @@
 package com.oc.mediscreen.controller;
 
+import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
 import com.oc.mediscreen.service.MediscreenService;
 import org.apache.logging.log4j.LogManager;
@@ -38,6 +39,8 @@ public class MediscreenController {
         logger.info("Get patient by id");
         Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("patient", patient);
+        List<Note> notes = mediscreenService.getPatientNotes(id);
+        model.addAttribute("notes", notes);
         return "patient/view";
     }
 
@@ -91,5 +94,24 @@ public class MediscreenController {
         mediscreenService.deletePatient(id);
         model.addAttribute("patients", mediscreenService.getPatientList());
         return "patient/list";
+    }
+
+    @GetMapping(value = "/patHistory/{patId}")
+    public String getPatientNotes(@PathVariable("patId") int patId, Model model) {
+        logger.info("get the patient notes");
+        List<Note> patientNotes = mediscreenService.getPatientNotes(patId);
+        model.addAttribute("patientNotes", patientNotes);
+        return "patient/view";
+    }
+
+    @PostMapping(value = "patHistory/add")
+    public String addPatientNote(@Valid Note note, BindingResult result, Model model){
+        if(!result.hasErrors()){
+            int patId = note.getPatId();
+            mediscreenService.addPatientNote(patId, note);
+            Patient patient = mediscreenService.getPatientById(patId).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + patId));
+            model.addAttribute("patient", patient);
+        }
+        return "patient/view";
     }
 }
