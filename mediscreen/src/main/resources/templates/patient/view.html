@@ -48,14 +48,17 @@
                 <td th:text="${patient.phone}"></td>
                 </div>
             </tr>
+    </div>
+    <div style="width: 100%" class="border border-dark">
         <tr th:each="note : ${notes}">
             <div class="form-group">
-                <label class="col-sm-4 control-label; font-weight-bold">Notes :</label>
+                <label class="font-weight-bold">Notes :</label>
                 <td th:text="${note.commentary}"></td>
             </div>
         </tr>
     </div>
-    <div style="margin-left: 520px; margin-top: 10px">
+    <div style="margin-left: 470px; margin-top: 10px">
+        <a class="btn btn-primary btn-sm" th:href="@{/patHistory/add/{id}(id=${patient.patientId})}">Add Note</a>
         <a class="btn btn-primary btn-sm" href="/patient/list">Return</a>
     </div>
 </div>

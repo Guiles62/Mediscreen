@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/HistoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -69,32 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "7daabb4d2b1e8fafc1d5ba87005d9359"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7daabb4d2b1e8fafc1d5ba87005d9359&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -102,6 +98,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\guile\OneDrive\Bureau\Formation\P9\Mediscreen\mediscreen\src\main\resources\static\css" />
       <recent name="C:\Users\guile\OneDrive\Bureau\Formation\P9\Mediscreen\mediscreen\src\main\resources\templates\patient" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\guile\OneDrive\Bureau\Formation\P9\Mediscreen\mediscreen\src\main\resources\templates\" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -177,7 +176,12 @@
       <workItem from="1654081735446" duration="756000" />
       <workItem from="1654083868258" duration="463000" />
       <workItem from="1654095942934" duration="1747000" />
-      <workItem from="1654154199986" duration="6037000" />
+      <workItem from="1654154199986" duration="6206000" />
+      <workItem from="1654240011564" duration="7771000" />
+      <workItem from="1654247851338" duration="746000" />
+      <workItem from="1654252745869" duration="1698000" />
+      <workItem from="1654259806111" duration="930000" />
+      <workItem from="1654499904614" duration="2881000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -221,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654156684752</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add HistoryProxy">
+      <created>1654160419052</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654160419052</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,15 +267,16 @@
     <MESSAGE value="Add Dockerfile" />
     <MESSAGE value="Add history" />
     <MESSAGE value="Add Config class for Mongo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Config class for Mongo" />
+    <MESSAGE value="add HistoryProxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add HistoryProxy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

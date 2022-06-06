@@ -104,14 +104,24 @@ public class MediscreenController {
         return "patient/view";
     }
 
-    @PostMapping(value = "patHistory/add")
-    public String addPatientNote(@Valid Note note, BindingResult result, Model model){
-        if(!result.hasErrors()){
-            int patId = note.getPatId();
-            mediscreenService.addPatientNote(patId, note);
-            Patient patient = mediscreenService.getPatientById(patId).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + patId));
-            model.addAttribute("patient", patient);
+    @PostMapping(value = "/patHistory/add/{id}")
+    public String addPatientNote(@PathVariable("id") int id, @Valid Note note, BindingResult result, Model model){
+        if(result.hasErrors()){
+            return "patHistory/add";
         }
+        mediscreenService.addPatientNote(id, note);
+        Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+        model.addAttribute("patient", patient);
+        List<Note> notes = mediscreenService.getPatientNotes(id);
+        model.addAttribute("notes", notes);
         return "patient/view";
+    }
+
+    @GetMapping(value = "/patHistory/add/{id}")
+    public String addPatientForm(@PathVariable("id") int id,Note note, Model model){
+        logger.info("get the form to add a Note");
+        Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+        model.addAttribute("patient", patient);
+        return "patHistory/add";
     }
 }
