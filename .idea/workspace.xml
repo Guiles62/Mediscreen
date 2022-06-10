@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/PatientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/DiagnosticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/DiagnosticService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/DiagnosticProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/DiagnosticProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +205,7 @@
       <workItem from="1654765754682" duration="16000" />
       <workItem from="1654766109776" duration="1076000" />
       <workItem from="1654775904078" duration="761000" />
-      <workItem from="1654844615534" duration="5264000" />
+      <workItem from="1654844615534" duration="10403000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -259,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654503030847</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add Diagnostic microservice">
+      <created>1654850183106</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654850183106</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,15 +307,21 @@
     <MESSAGE value="Add Config class for Mongo" />
     <MESSAGE value="add HistoryProxy" />
     <MESSAGE value="add addNote templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="add addNote templates" />
+    <MESSAGE value="add Diagnostic microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Diagnostic microservice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="10" />
+          <line>31</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java</url>
+          <line>221</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

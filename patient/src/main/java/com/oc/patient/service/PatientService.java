@@ -10,6 +10,7 @@ public interface PatientService {
 
     List<Patient> getPatientList();
     Optional<Patient> findPatientById(int id);
+    Optional<Patient> findByPatientFirstname(String firstname);
     Patient addPatient(String family, String given, LocalDate dob, String sex, String address, String phone);
     Patient updatePatient(Patient patient);
     void deletePatient(Patient patient);

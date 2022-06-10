@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
-import org.apache.logging.log4j.LogManager;
+
 import org.apache.logging.log4j.Logger;
 
 @RestController
@@ -34,6 +34,11 @@ public class PatientController {
     public Optional<Patient> getPatientById(@PathVariable("id") int id) {
         logger.info("Get patient by id");
         return patientService.findPatientById(id);
+    }
+
+    @GetMapping(value = "/getpatient/{firstname}")
+    public Optional<Patient> getPatientByFirstname(@PathVariable String firstname) {
+        return patientService.findByPatientFirstname(firstname);
     }
 
     @PostMapping(value = "/patient/add")

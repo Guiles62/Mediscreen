@@ -137,7 +137,13 @@ public class MediscreenServiceImpl implements MediscreenService {
      */
     @Override
     public Assessment getPatientAssessment(int id) {
-        Assessment patientAssessment = diagnosticProxy.getAssessment(id);
+        Assessment patientAssessment = diagnosticProxy.getAssessmentById(id);
+        return patientAssessment;
+    }
+
+    @Override
+    public Assessment getPatientAssessmentByFirstname(String firstname) {
+        Assessment patientAssessment = diagnosticProxy.getAssessmentByFamilyName(firstname);
         return patientAssessment;
     }
 }

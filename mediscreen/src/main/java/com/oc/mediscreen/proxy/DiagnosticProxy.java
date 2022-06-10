@@ -9,5 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface DiagnosticProxy {
 
     @PostMapping(value = "/assess/{id}")
-    Assessment getAssessment(@PathVariable("id") int id);
+    Assessment getAssessmentById(@PathVariable("id") int id);
+
+    @PostMapping(value = "assessment/{firstname}")
+    Assessment getAssessmentByFamilyName(@PathVariable("firstname") String firstname);
 }

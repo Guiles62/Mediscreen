@@ -29,6 +29,11 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
+    public Optional<Patient> findByPatientFirstname(String firstname) {
+        return patientRepository.findByFirstname(firstname);
+    }
+
+    @Override
     public Patient addPatient(String family, String given, LocalDate dob, String sex, String address, String phone) {
         Patient patient = new Patient();
         patient.setFirstname(family);

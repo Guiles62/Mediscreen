@@ -215,4 +215,11 @@ public class MediscreenController {
         model.addAttribute("assessment", mediscreenService.getPatientAssessment(id));
         return "/patient/view";
     }
+
+    @GetMapping(value = "/assessment/{firstname}")
+    public String getPatientAssessmentByFamilyName(@PathVariable("firstname") String firstname, Model model) {
+        logger.info("Get the patient assessment by his firstname");
+        model.addAttribute("assessment", mediscreenService.getPatientAssessmentByFirstname(firstname));
+        return "/patient/view";
+    }
 }

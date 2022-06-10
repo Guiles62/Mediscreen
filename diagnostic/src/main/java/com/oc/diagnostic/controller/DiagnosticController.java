@@ -16,8 +16,13 @@ public class DiagnosticController {
     }
 
     @PostMapping(value = "/assess/{id}")
-    public Assessment getAssessment(@PathVariable("id") int id) {
-        Assessment assessment = diagnosticService.addAssessment(id);
+    public Assessment getAssessmentById(@PathVariable("id") int id) {
+        Assessment assessment = diagnosticService.getAssessmentById(id);
         return assessment;
+    }
+
+    @PostMapping(value = "/assessment/{firstname}")
+    public Assessment getAssessmentByFamilyName(@PathVariable("firstname") String firstname){
+        return diagnosticService.getAssessmentByFamilyName(firstname);
     }
 }
