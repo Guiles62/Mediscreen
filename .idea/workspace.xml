@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -124,6 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiagnosticApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="diagnostic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oc.diagnostic.DiagnosticApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HistoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="history" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oc.history.HistoryApplication" />
@@ -181,7 +192,16 @@
       <workItem from="1654247851338" duration="746000" />
       <workItem from="1654252745869" duration="1698000" />
       <workItem from="1654259806111" duration="930000" />
-      <workItem from="1654499904614" duration="2881000" />
+      <workItem from="1654499904614" duration="6015000" />
+      <workItem from="1654588509041" duration="4052000" />
+      <workItem from="1654592660207" duration="852000" />
+      <workItem from="1654595157778" duration="177000" />
+      <workItem from="1654671905086" duration="1485000" />
+      <workItem from="1654758326947" duration="6747000" />
+      <workItem from="1654765754682" duration="16000" />
+      <workItem from="1654766109776" duration="1076000" />
+      <workItem from="1654775904078" duration="761000" />
+      <workItem from="1654844615534" duration="5264000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -232,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654160419052</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add addNote templates">
+      <created>1654503030847</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654503030847</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,15 +295,16 @@
     <MESSAGE value="Add history" />
     <MESSAGE value="Add Config class for Mongo" />
     <MESSAGE value="add HistoryProxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add HistoryProxy" />
+    <MESSAGE value="add addNote templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="add addNote templates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

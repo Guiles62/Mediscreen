@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="history" />
+        <module name="diagnostic" />
         <module name="patient" />
         <module name="mediscreen" />
-        <module name="history" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MediscreenUI" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="diagnostic" options="-parameters" />
       <module name="history" options="-parameters" />
       <module name="mediscreen" options="-parameters" />
       <module name="patient" options="-parameters" />
