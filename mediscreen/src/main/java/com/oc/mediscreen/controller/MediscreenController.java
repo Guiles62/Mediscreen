@@ -1,6 +1,7 @@
 package com.oc.mediscreen.controller;
 
 
+import com.oc.mediscreen.model.Assessment;
 import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
 import com.oc.mediscreen.service.MediscreenService;
@@ -72,6 +73,10 @@ public class MediscreenController {
         model.addAttribute("patient", patient);
         List<Note> notes = mediscreenService.getPatientNotes(id);
         model.addAttribute("notes", notes);
+        Assessment assessmentById = mediscreenService.getPatientAssessment(id);
+        Assessment assessmentByFirstname = mediscreenService.getPatientAssessmentByFirstname(patient.getFirstname());
+        model.addAttribute("assessment", assessmentById);
+        model.addAttribute("assessment", assessmentByFirstname);
         return "patient/view";
     }
 

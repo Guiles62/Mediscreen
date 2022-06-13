@@ -15,6 +15,17 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <b>DiagnosticServiceImpl is the class which implement DiagnosticService and call proxies to get or send data</b>
+ * <p>
+ *     contains methods
+ *     <ul>
+ *         <li>getAssessmentById</li>
+ *         <li>getAssessmentByFamilyName</li>
+ *     </ul>
+ * </p>
+ * @author Guillaume C
+ */
 @Service
 public class DiagnosticServiceImpl implements DiagnosticService {
 
@@ -26,7 +37,12 @@ public class DiagnosticServiceImpl implements DiagnosticService {
         this.historyProxy = historyProxy;
     }
 
-
+    /**
+     * Call PatientProxy and HistoryProxy to get data to generate the patient's assessment by his id
+     * Compare danger terms list to medical notes to generate assessment
+     * @param id id of the patient
+     * @return patient's assessment
+     */
     @Override
     public Assessment getAssessmentById(int id) {
         Assessment patientAssessment = new Assessment();
@@ -67,6 +83,12 @@ public class DiagnosticServiceImpl implements DiagnosticService {
         return patientAssessment;
     }
 
+    /**
+     * Call PatientProxy and HistoryProxy to get data to generate the patient's assessment by his firstname
+     * Compare danger terms list to medical notes to generate assessment
+     * @param familyName patient's firstname
+     * @return patient's assessment
+     */
     @Override
     public Assessment getAssessmentByFamilyName(String familyName) {
         Assessment patientAssessment = new Assessment();

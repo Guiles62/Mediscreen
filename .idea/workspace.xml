@@ -7,16 +7,15 @@
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/PatientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/DiagnosticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/DiagnosticService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/configuration/SpringMongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/configuration/SpringMongoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/DiagnosticProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/DiagnosticProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/repository/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/PatientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,32 +72,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;7daabb4d2b1e8fafc1d5ba87005d9359&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "2906b4861d3927c0ea67e215195b8641"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -160,6 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DiagnosticApplication" />
+      <item itemvalue="Spring Boot.MediscreenApplication" />
+      <item itemvalue="Spring Boot.HistoryApplication" />
+      <item itemvalue="Spring Boot.PatientApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -205,7 +210,8 @@
       <workItem from="1654765754682" duration="16000" />
       <workItem from="1654766109776" duration="1076000" />
       <workItem from="1654775904078" duration="761000" />
-      <workItem from="1654844615534" duration="10403000" />
+      <workItem from="1654844615534" duration="10633000" />
+      <workItem from="1655102780963" duration="5784000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -270,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654850183106</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add &quot;/assessment/{firstname}&quot;">
+      <created>1654855259166</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654855259166</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,22 +321,7 @@
     <MESSAGE value="add HistoryProxy" />
     <MESSAGE value="add addNote templates" />
     <MESSAGE value="add Diagnostic microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Diagnostic microservice" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java</url>
-          <line>221</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add &quot;/assessment/{firstname}&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &quot;/assessment/{firstname}&quot;" />
   </component>
 </project>

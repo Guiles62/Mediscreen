@@ -7,6 +7,17 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * <b>HistoryServiceImpl is the class which implement HistoryService and call HistoryRepository to get or send data for and from database</b>
+ * <p>
+ *     contains methods
+ *     <ul>
+ *         <li>addNote</li>
+ *         <li>getPatientNote</li>
+ *     </ul>
+ * </p>
+ * @author Guillaume C
+ */
 @Service
 public class HistoryServiceImpl implements HistoryService {
 
@@ -16,11 +27,21 @@ public class HistoryServiceImpl implements HistoryService {
         this.historyRepository = historyRepository;
     }
 
+    /**
+     * Call HistoryRepository to save a new note in database
+     * @param note the content of the note
+     * @return the note
+     */
     @Override
     public Note addNote(Note note) {
         return historyRepository.save(note);
     }
 
+    /**
+     * Call HistoryRepository to get the list of notes for a patient
+     * @param patId the patient's id
+     * @return the list of notes
+     */
     @Override
     public List<Note> getPatientNote(int patId) {
         return historyRepository.findPatientNotesByPatId(patId);

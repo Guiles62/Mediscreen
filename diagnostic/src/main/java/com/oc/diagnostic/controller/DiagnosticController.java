@@ -6,6 +6,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * <b>DiagnosticController is the class which call and receive data for and from DiagnosticService</b>
+ * <p>
+ *     contains method
+ *     <ul>
+ *         <li>getAssessmentById</li>
+ *         <li>getAssessmentByFamilyName</li>
+ *     </ul>
+ * </p>
+ * @author Guillaume C
+ */
 @RestController
 public class DiagnosticController {
 
@@ -15,12 +26,22 @@ public class DiagnosticController {
         this.diagnosticService = diagnosticService;
     }
 
+    /**
+     * Call DiagnosticService to generate Patient assessment with patient's id
+     * @param id id of the patient
+     * @return patient's assessment
+     */
     @PostMapping(value = "/assess/{id}")
     public Assessment getAssessmentById(@PathVariable("id") int id) {
         Assessment assessment = diagnosticService.getAssessmentById(id);
         return assessment;
     }
 
+    /**
+     * Call DiagnosticService to generate Patient assessment with patient's firstname
+     * @param firstname firstname of the patient
+     * @return patient's assessment
+     */
     @PostMapping(value = "/assessment/{firstname}")
     public Assessment getAssessmentByFamilyName(@PathVariable("firstname") String firstname){
         return diagnosticService.getAssessmentByFamilyName(firstname);

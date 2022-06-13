@@ -12,7 +12,13 @@ import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
 
 
 /**
- * Configuration class to remove _class in Mongo Database
+ * <b>Configuration class to remove _class in Mongo Database</b>
+ * <p>
+ *     contains method
+ *     <ul>
+ *         <li>mappingMongoConverter</li>
+ *     </ul>
+ * </p>
  */
 @Configuration
 public class SpringMongoConfig{
@@ -22,6 +28,10 @@ public class SpringMongoConfig{
     @Autowired
     private MongoMappingContext mongoMappingContext;
 
+    /**
+     * Set a converter to remove _class in Mongo Database
+     * @return the converter
+     */
     @Bean
     public MappingMongoConverter mappingMongoConverter() {
 
