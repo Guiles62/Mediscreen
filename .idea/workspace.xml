@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/controllerTest/DiagnosticControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/controllerTest/DiagnosticControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,33 +61,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "2906b4861d3927c0ea67e215195b8641"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2906b4861d3927c0ea67e215195b8641&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -108,80 +107,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HistoryServiceTest">
-    <configuration name="HistoryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="history" />
+  <component name="RunManager" selected="JUnit.PatientControllerTest.updatePatient">
+    <configuration name="PatientControllerTest.addPatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="patient" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.history.controllerTest.*" />
+          <option name="PATTERN" value="com.oc.patient.controllerTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.history.controllerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.history.controllerTest.HistoryControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HistoryControllerTest.getPatientNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="history" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oc.history.controllerTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oc.history.controllerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.history.controllerTest.HistoryControllerTest" />
-      <option name="METHOD_NAME" value="getPatientNote" />
+      <option name="PACKAGE_NAME" value="com.oc.patient.controllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.patient.controllerTest.PatientControllerTest" />
+      <option name="METHOD_NAME" value="addPatientTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HistoryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="history" />
+    <configuration name="PatientControllerTest.updatePatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="patient" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.history.serviceTest.*" />
+          <option name="PATTERN" value="com.oc.patient.controllerTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.history.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.history.serviceTest.HistoryServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HistoryServiceTest.addNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="history" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oc.history.serviceTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oc.history.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.history.serviceTest.HistoryServiceTest" />
-      <option name="METHOD_NAME" value="addNote" />
+      <option name="PACKAGE_NAME" value="com.oc.patient.controllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.patient.controllerTest.PatientControllerTest" />
+      <option name="METHOD_NAME" value="updatePatient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HistoryServiceTest.getPatientNoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="history" />
+    <configuration name="PatientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="patient" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.history.serviceTest.*" />
+          <option name="PATTERN" value="com.oc.patient.serviceTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.history.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.history.serviceTest.HistoryServiceTest" />
-      <option name="METHOD_NAME" value="getPatientNoteTest" />
+      <option name="PACKAGE_NAME" value="com.oc.patient.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.patient.serviceTest.PatientServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientServiceTest.deletePatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="patient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.patient.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.patient.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.patient.serviceTest.PatientServiceTest" />
+      <option name="METHOD_NAME" value="deletePatientTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientServiceTest.updatePatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="patient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.patient.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.patient.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.patient.serviceTest.PatientServiceTest" />
+      <option name="METHOD_NAME" value="updatePatientTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -229,11 +229,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HistoryControllerTest" />
-      <item itemvalue="JUnit.HistoryControllerTest.getPatientNote" />
-      <item itemvalue="JUnit.HistoryServiceTest" />
-      <item itemvalue="JUnit.HistoryServiceTest.addNote" />
-      <item itemvalue="JUnit.HistoryServiceTest.getPatientNoteTest" />
+      <item itemvalue="JUnit.PatientControllerTest.addPatientTest" />
+      <item itemvalue="JUnit.PatientServiceTest" />
+      <item itemvalue="JUnit.PatientServiceTest.deletePatientTest" />
+      <item itemvalue="JUnit.PatientServiceTest.updatePatientTest" />
+      <item itemvalue="JUnit.PatientControllerTest.updatePatient" />
       <item itemvalue="Spring Boot.DiagnosticApplication" />
       <item itemvalue="Spring Boot.MediscreenApplication" />
       <item itemvalue="Spring Boot.HistoryApplication" />
@@ -241,11 +241,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HistoryServiceTest" />
-        <item itemvalue="JUnit.HistoryServiceTest.getPatientNoteTest" />
-        <item itemvalue="JUnit.HistoryServiceTest.addNote" />
-        <item itemvalue="JUnit.HistoryControllerTest" />
-        <item itemvalue="JUnit.HistoryControllerTest.getPatientNote" />
+        <item itemvalue="JUnit.PatientControllerTest.updatePatient" />
+        <item itemvalue="JUnit.PatientControllerTest.addPatientTest" />
+        <item itemvalue="JUnit.PatientServiceTest" />
+        <item itemvalue="JUnit.PatientServiceTest.deletePatientTest" />
+        <item itemvalue="JUnit.PatientServiceTest.updatePatientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +294,8 @@
       <workItem from="1654766109776" duration="1076000" />
       <workItem from="1654775904078" duration="761000" />
       <workItem from="1654844615534" duration="10633000" />
-      <workItem from="1655102780963" duration="11855000" />
+      <workItem from="1655102780963" duration="15218000" />
+      <workItem from="1655119655265" duration="1334000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -380,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655113680771</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add History microservice tests">
+      <created>1655115643653</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655115643653</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +429,8 @@
     <MESSAGE value="add &quot;/assessment/{firstname}&quot;" />
     <MESSAGE value="add javadoc on microservices" />
     <MESSAGE value="add Diagnostic microservice tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Diagnostic microservice tests" />
+    <MESSAGE value="add History microservice tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add History microservice tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mediscreen$HistoryControllerTest_addNoteTest.ic" NAME="HistoryControllerTest.addNoteTest Coverage Results" MODIFIED="1655114193944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
