@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/configuration/SpringMongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/configuration/SpringMongoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/controller/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/repository/HistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/java/com/oc/history/service/impl/HistoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/templates/patient/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/repository/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/java/com/oc/patient/service/impl/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +72,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css",
@@ -117,7 +109,85 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MediscreenApplication">
+  <component name="RunManager" selected="JUnit.DiagnosticServiceTest">
+    <configuration name="DiagnosticControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diagnostic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.diagnostic.controllerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic.controllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.diagnostic.controllerTest.DiagnosticControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiagnosticControllerTest.getAssessmentByFamilyNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diagnostic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.diagnostic.controllerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic.controllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.diagnostic.controllerTest.DiagnosticControllerTest" />
+      <option name="METHOD_NAME" value="getAssessmentByFamilyNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiagnosticServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diagnostic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.diagnostic.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.diagnostic.serviceTest.DiagnosticServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiagnosticServiceTest.getAssessmentByFamilyName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diagnostic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.diagnostic.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.diagnostic.serviceTest.DiagnosticServiceTest" />
+      <option name="METHOD_NAME" value="getAssessmentByFamilyName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiagnosticServiceTest.getAssessmentByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diagnostic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.diagnostic.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.diagnostic.serviceTest.DiagnosticServiceTest" />
+      <option name="METHOD_NAME" value="getAssessmentByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MediscreenUI" />
       <method v="2">
@@ -160,11 +230,25 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.DiagnosticControllerTest" />
+      <item itemvalue="JUnit.DiagnosticControllerTest.getAssessmentByFamilyNameTest" />
+      <item itemvalue="JUnit.DiagnosticServiceTest" />
+      <item itemvalue="JUnit.DiagnosticServiceTest.getAssessmentByFamilyName" />
+      <item itemvalue="JUnit.DiagnosticServiceTest.getAssessmentByIdTest" />
       <item itemvalue="Spring Boot.DiagnosticApplication" />
       <item itemvalue="Spring Boot.MediscreenApplication" />
       <item itemvalue="Spring Boot.HistoryApplication" />
       <item itemvalue="Spring Boot.PatientApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DiagnosticServiceTest" />
+        <item itemvalue="JUnit.DiagnosticServiceTest.getAssessmentByFamilyName" />
+        <item itemvalue="JUnit.DiagnosticServiceTest.getAssessmentByIdTest" />
+        <item itemvalue="JUnit.DiagnosticControllerTest" />
+        <item itemvalue="JUnit.DiagnosticControllerTest.getAssessmentByFamilyNameTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -211,7 +295,7 @@
       <workItem from="1654766109776" duration="1076000" />
       <workItem from="1654775904078" duration="761000" />
       <workItem from="1654844615534" duration="10633000" />
-      <workItem from="1655102780963" duration="5784000" />
+      <workItem from="1655102780963" duration="9911000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -283,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654855259166</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add javadoc on microservices">
+      <created>1655108947020</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655108947020</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +413,7 @@
     <MESSAGE value="add addNote templates" />
     <MESSAGE value="add Diagnostic microservice" />
     <MESSAGE value="add &quot;/assessment/{firstname}&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;/assessment/{firstname}&quot;" />
+    <MESSAGE value="add javadoc on microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="add javadoc on microservices" />
   </component>
 </project>
