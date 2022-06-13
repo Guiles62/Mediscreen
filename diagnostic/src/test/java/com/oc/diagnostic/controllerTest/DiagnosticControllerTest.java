@@ -28,9 +28,6 @@ public class DiagnosticControllerTest {
     private MockMvc mockMvc;
 
     @InjectMocks
-    private Note note;
-
-    @InjectMocks
     private Assessment assessment;
 
     @MockBean
