@@ -296,7 +296,7 @@
       <workItem from="1654844615534" duration="10633000" />
       <workItem from="1655102780963" duration="15218000" />
       <workItem from="1655119655265" duration="1647000" />
-      <workItem from="1655190363270" duration="6588000" />
+      <workItem from="1655190363270" duration="6892000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -417,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655196653028</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add docker-compose">
+      <created>1655196987223</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1655196987223</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
