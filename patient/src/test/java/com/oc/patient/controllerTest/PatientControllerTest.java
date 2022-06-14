@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -22,7 +21,6 @@ import java.util.Optional;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -41,14 +39,6 @@ public class PatientControllerTest {
     private Patient patient;
 
     private List<Patient> patientList;
-
-    public static String asJsonString(final Object obj) {
-        try {
-            return new ObjectMapper().writeValueAsString(obj);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 
 
     @BeforeEach
@@ -85,7 +75,7 @@ public class PatientControllerTest {
     }
 
     @Test
-    public void addPatientTest() throws Exception {
+    public void addPatientTest() {
         LocalDate birthdate = LocalDate.of(1983,06,03);
         Mockito.when(patientService.addPatient("firstname","lastname",birthdate,"M","1234","123456")).thenReturn(patient);
         patientController.addPatient("firstname","lastname",birthdate,"M","1234","123456");
@@ -93,7 +83,7 @@ public class PatientControllerTest {
     }
 
     @Test
-    public void updatePatient() throws Exception {
+    public void updatePatient() {
         Mockito.when(patientService.updatePatient(patient)).thenReturn(patient);
         patientController.updatePatient(patient);
         verify(patientService,times(1)).updatePatient(patient);

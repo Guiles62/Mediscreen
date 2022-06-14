@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/src/test/java/com/oc/patient/controllerTest/PatientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/test/java/com/oc/patient/controllerTest/PatientControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,81 +109,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PatientControllerTest.updatePatient">
-    <configuration name="PatientControllerTest.addPatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="patient" />
+  <component name="RunManager" selected="JUnit.MediscreenServiceTest">
+    <configuration name="MediscreenServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.patient.controllerTest.*" />
+          <option name="PATTERN" value="com.oc.mediscreen.serviceTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.patient.controllerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.patient.controllerTest.PatientControllerTest" />
-      <option name="METHOD_NAME" value="addPatientTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PatientControllerTest.updatePatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="patient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oc.patient.controllerTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oc.patient.controllerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.patient.controllerTest.PatientControllerTest" />
-      <option name="METHOD_NAME" value="updatePatient" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PatientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="patient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oc.patient.serviceTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oc.patient.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.patient.serviceTest.PatientServiceTest" />
+      <option name="PACKAGE_NAME" value="com.oc.mediscreen.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.mediscreen.serviceTest.MediscreenServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatientServiceTest.deletePatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="patient" />
+    <configuration name="MediscreenServiceTest.addPatientNoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.patient.serviceTest.*" />
+          <option name="PATTERN" value="com.oc.mediscreen.serviceTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.patient.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.patient.serviceTest.PatientServiceTest" />
-      <option name="METHOD_NAME" value="deletePatientTest" />
+      <option name="PACKAGE_NAME" value="com.oc.mediscreen.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.mediscreen.serviceTest.MediscreenServiceTest" />
+      <option name="METHOD_NAME" value="addPatientNoteTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatientServiceTest.updatePatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="patient" />
+    <configuration name="MediscreenServiceTest.getPatientAssessmentByFirstnameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.patient.serviceTest.*" />
+          <option name="PATTERN" value="com.oc.mediscreen.serviceTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.patient.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.patient.serviceTest.PatientServiceTest" />
-      <option name="METHOD_NAME" value="updatePatientTest" />
+      <option name="PACKAGE_NAME" value="com.oc.mediscreen.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.mediscreen.serviceTest.MediscreenServiceTest" />
+      <option name="METHOD_NAME" value="getPatientAssessmentByFirstnameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediscreenServiceTest.getPatientAssessmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.mediscreen.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.mediscreen.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.mediscreen.serviceTest.MediscreenServiceTest" />
+      <option name="METHOD_NAME" value="getPatientAssessmentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediscreenServiceTest.getPatientNotesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.mediscreen.serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.mediscreen.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.mediscreen.serviceTest.MediscreenServiceTest" />
+      <option name="METHOD_NAME" value="getPatientNotesTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -229,11 +231,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PatientControllerTest.addPatientTest" />
-      <item itemvalue="JUnit.PatientServiceTest" />
-      <item itemvalue="JUnit.PatientServiceTest.deletePatientTest" />
-      <item itemvalue="JUnit.PatientServiceTest.updatePatientTest" />
-      <item itemvalue="JUnit.PatientControllerTest.updatePatient" />
+      <item itemvalue="JUnit.MediscreenServiceTest" />
+      <item itemvalue="JUnit.MediscreenServiceTest.addPatientNoteTest" />
+      <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentByFirstnameTest" />
+      <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentTest" />
+      <item itemvalue="JUnit.MediscreenServiceTest.getPatientNotesTest" />
       <item itemvalue="Spring Boot.DiagnosticApplication" />
       <item itemvalue="Spring Boot.MediscreenApplication" />
       <item itemvalue="Spring Boot.HistoryApplication" />
@@ -241,11 +243,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PatientControllerTest.updatePatient" />
-        <item itemvalue="JUnit.PatientControllerTest.addPatientTest" />
-        <item itemvalue="JUnit.PatientServiceTest" />
-        <item itemvalue="JUnit.PatientServiceTest.deletePatientTest" />
-        <item itemvalue="JUnit.PatientServiceTest.updatePatientTest" />
+        <item itemvalue="JUnit.MediscreenServiceTest" />
+        <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentByFirstnameTest" />
+        <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentTest" />
+        <item itemvalue="JUnit.MediscreenServiceTest.addPatientNoteTest" />
+        <item itemvalue="JUnit.MediscreenServiceTest.getPatientNotesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +297,8 @@
       <workItem from="1654775904078" duration="761000" />
       <workItem from="1654844615534" duration="10633000" />
       <workItem from="1655102780963" duration="15218000" />
-      <workItem from="1655119655265" duration="1334000" />
+      <workItem from="1655119655265" duration="1647000" />
+      <workItem from="1655190363270" duration="4247000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -388,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655115643653</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add Patient microservice tests">
+      <created>1655121248526</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655121248526</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +440,8 @@
     <MESSAGE value="add javadoc on microservices" />
     <MESSAGE value="add Diagnostic microservice tests" />
     <MESSAGE value="add History microservice tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add History microservice tests" />
+    <MESSAGE value="add Patient microservice tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Patient microservice tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mediscreen$HistoryControllerTest_addNoteTest.ic" NAME="HistoryControllerTest.addNoteTest Coverage Results" MODIFIED="1655114193944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

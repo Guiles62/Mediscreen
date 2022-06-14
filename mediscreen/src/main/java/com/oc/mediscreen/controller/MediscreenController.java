@@ -156,7 +156,7 @@ public class MediscreenController {
      * @param model the list of patients
      * @return the patient/list template
      */
-    @GetMapping(value = "patient/delete/{id}")
+    @GetMapping(value = "/patient/delete/{id}")
     public String deletePatient(@PathVariable("id") int id, Model model) {
         logger.info("Delete the patient by id");
         mediscreenService.deletePatient(id);
@@ -207,7 +207,7 @@ public class MediscreenController {
      * @return the patHistory/add template
      */
     @GetMapping(value = "/patHistory/add/{id}")
-    public String addPatientForm(@PathVariable("id") int id,Note note, Model model){
+    public String addPatientNoteForm(@PathVariable("id") int id,Note note, Model model){
         logger.info("get the form to add a Note");
         Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("patient", patient);
