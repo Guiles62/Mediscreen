@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patient/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +296,7 @@
       <workItem from="1654844615534" duration="10633000" />
       <workItem from="1655102780963" duration="15218000" />
       <workItem from="1655119655265" duration="1647000" />
-      <workItem from="1655190363270" duration="6195000" />
+      <workItem from="1655190363270" duration="6588000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -403,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655194844405</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add docker-compose">
+      <created>1655196606613</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1655196606613</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add docker-compose">
+      <created>1655196653028</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1655196653028</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +461,8 @@
     <MESSAGE value="add History microservice tests" />
     <MESSAGE value="add Patient microservice tests" />
     <MESSAGE value="add Mediscreen microservice tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Mediscreen microservice tests" />
+    <MESSAGE value="add docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="add docker-compose" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mediscreen$HistoryControllerTest_addNoteTest.ic" NAME="HistoryControllerTest.addNoteTest Coverage Results" MODIFIED="1655114193944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
