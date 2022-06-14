@@ -1,0 +1,43 @@
+version: 3
+services:
+
+  mysql :
+    image: mysql
+    container_name: mysql
+    ports:
+      - "3306""3306"
+    environment:
+      MYSQl_DATABASE: "mediscreen"
+      MYSQL_PASSWORD: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017""27017"
+
+  diagnostic :
+    depends_on:
+      - history
+      - patient
+    image: diagnostic
+    container_name: diagnosticappcontainer
+    ports:
+      - "8083""8083"
+
+  history :
+    depends_on:
+      - mongodb
+    image: history
+    container_name: historyappcontainer
+    ports:
+      - "8082""8082"
+
+  patient :
+    depends_on:
+      - mysql
+    image: patient
+    container_name: patientappcontainer
+    ports:
+      - "8081""8081"

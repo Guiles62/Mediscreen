@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/src/test/java/com/oc/patient/controllerTest/PatientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/test/java/com/oc/patient/controllerTest/PatientControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,33 +61,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2906b4861d3927c0ea67e215195b8641&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "2906b4861d3927c0ea67e215195b8641"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -298,7 +296,7 @@
       <workItem from="1654844615534" duration="10633000" />
       <workItem from="1655102780963" duration="15218000" />
       <workItem from="1655119655265" duration="1647000" />
-      <workItem from="1655190363270" duration="4247000" />
+      <workItem from="1655190363270" duration="6195000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -398,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655121248526</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add Mediscreen microservice tests">
+      <created>1655194844405</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1655194844405</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +446,8 @@
     <MESSAGE value="add Diagnostic microservice tests" />
     <MESSAGE value="add History microservice tests" />
     <MESSAGE value="add Patient microservice tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Patient microservice tests" />
+    <MESSAGE value="add Mediscreen microservice tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Mediscreen microservice tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mediscreen$HistoryControllerTest_addNoteTest.ic" NAME="HistoryControllerTest.addNoteTest Coverage Results" MODIFIED="1655114193944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
