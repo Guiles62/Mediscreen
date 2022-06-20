@@ -83,7 +83,8 @@ public class PatientController {
     public Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam LocalDate dob,
                               @RequestParam String sex, @RequestParam String address, @RequestParam String phone) {
         logger.info("add a patient");
-        return patientService.addPatient(family,given,dob,sex,address,phone);
+        LocalDate birthday = LocalDate.parse(dob.toString()).minusYears(100);
+        return patientService.addPatient(family,given,birthday,sex,address,phone);
     }
 
     /**

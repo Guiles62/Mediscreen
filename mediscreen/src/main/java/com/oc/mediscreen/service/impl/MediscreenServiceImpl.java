@@ -10,7 +10,6 @@ import com.oc.mediscreen.service.MediscreenService;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -78,6 +77,13 @@ public class MediscreenServiceImpl implements MediscreenService {
      */
     @Override
     public Patient addPatient(String family, String given, LocalDate dob, String sex, String address, String phone) {
+        Patient patient = new Patient();
+        patient.setBirthday(dob);
+        patient.setFirstname(family);
+        patient.setLastname(given);
+        patient.setGender(sex);
+        patient.setPhone(phone);
+        patient.setAddress(address);
         return patientProxy.addPatient(family,given,dob,sex,address,phone);
     }
 

@@ -110,6 +110,10 @@ public class MediscreenController {
             mediscreenService.updatePatient(id, patientToUpdate);
             Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
             model.addAttribute("patient", patient);
+            List<Note> notes = mediscreenService.getPatientNotes(id);
+            model.addAttribute("notes", notes);
+            Assessment assessmentById = mediscreenService.getPatientAssessment(id);
+            model.addAttribute("assessment", assessmentById);
             return "patient/view";
         }
         return "patient/update";
@@ -196,6 +200,8 @@ public class MediscreenController {
         model.addAttribute("patient", patient);
         List<Note> notes = mediscreenService.getPatientNotes(id);
         model.addAttribute("notes", notes);
+        Assessment assessmentById = mediscreenService.getPatientAssessment(id);
+        model.addAttribute("assessment", assessmentById);
         return "patient/view";
     }
 
