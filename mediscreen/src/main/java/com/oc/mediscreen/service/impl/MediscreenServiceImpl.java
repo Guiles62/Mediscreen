@@ -3,6 +3,7 @@ package com.oc.mediscreen.service.impl;
 import com.oc.mediscreen.model.Assessment;
 import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
+import com.oc.mediscreen.model.PatientDTO;
 import com.oc.mediscreen.proxy.DiagnosticProxy;
 import com.oc.mediscreen.proxy.HistoryProxy;
 import com.oc.mediscreen.proxy.PatientProxy;
@@ -10,6 +11,7 @@ import com.oc.mediscreen.service.MediscreenService;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -145,6 +147,20 @@ public class MediscreenServiceImpl implements MediscreenService {
     public Assessment getPatientAssessment(int id) {
         Assessment patientAssessment = diagnosticProxy.getAssessmentById(id);
         return patientAssessment;
+    }
+
+    public PatientDTO getPatientRisk(int id) {
+        Patient patient = patientProxy.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
+        Assessment patientAssessment = diagnosticProxy.getAssessmentById(id);
+        LocalDate today = LocalDate.now();
+        LocalDate patientBirthday = patient.getBirthday();
+        long age = ChronoUnit.YEARS.between(patientBirthday,today);
+        PatientDTO patientDTO = new PatientDTO();
+        patientDTO.setFirstname(patient.getFirstname());
+        patientDTO.setLastname(patient.getLastname());
+        patientDTO.setAge(age);
+        patientDTO.setRisk(patientAssessment.getRisk());
+        return patientDTO;
     }
 
     @Override

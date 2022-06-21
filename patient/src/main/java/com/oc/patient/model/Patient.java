@@ -1,5 +1,7 @@
 package com.oc.patient.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
@@ -23,6 +25,7 @@ public class Patient {
 
     @Column(name = "birthday")
     @NotBlank(message = "birthday is mandatory")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthday;
 
     @Column(name = "gender")

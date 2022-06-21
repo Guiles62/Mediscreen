@@ -3,6 +3,7 @@ package com.oc.mediscreen.service;
 import com.oc.mediscreen.model.Assessment;
 import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
+import com.oc.mediscreen.model.PatientDTO;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -38,4 +39,5 @@ public interface MediscreenService {
     Note addPatientNote(int patId, Note note);
     Assessment getPatientAssessment(int id);
     Assessment getPatientAssessmentByFirstname(String firstname);
+    PatientDTO getPatientRisk(int id);
 }

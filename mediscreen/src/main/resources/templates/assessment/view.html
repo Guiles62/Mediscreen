@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Informations</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" >
+</head>
+<body>
+<div class="container">
+    <img src="../../css/logo.jpg" class="mx-auto d-block" >
+    <h1 style="margin-left: 390px">Patient Assessment</h1>
+    <div style="width: 40%; margin-left: 350px" class="border border-dark">
+        <tr th:object="${patientdto}">
+            <div class="form-group">
+                <label class="col-sm-3 control-label; font-weight-bold">Patient :</label>
+                <td th:text="${patientdto.lastname}"></td>
+                <td th:text="${patientdto.firstname}"></td>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label; font-weight-bold">Age :</label>
+                <td th:text="${patientdto.age}"></td> ans
+            </div>
+            <div class="form-group">
+                <label class="col-sm-6 control-label; font-weight-bold">Diabetes assessment is :</label>
+                <td th:text="${patientdto.risk}"></td>
+            </div>
+        </tr>
+    </div>
+        <div style="margin-left: 530px; margin-top: 10px">
+            <a class="btn btn-primary btn-sm" th:href="@{/patient/{id}(id=${patient.patientId})}">Return</a>
+        </div>
+</div>
+</body>
+</html>
