@@ -39,5 +39,5 @@ public interface MediscreenService {
     Note addPatientNote(int patId, Note note);
     Assessment getPatientAssessment(int id);
     Assessment getPatientAssessmentByFirstname(String firstname);
-    PatientDTO getPatientRisk(int id);
+    PatientDTO getPatientAssessmentRiskById(int id);
 }

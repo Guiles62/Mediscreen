@@ -223,7 +223,7 @@ public class MediscreenController {
     @GetMapping(value = "/assess/{id}")
     public String getPatientAssessmentById(@PathVariable("id") int id, Model model) {
         logger.info("Get the patient assessment");
-        model.addAttribute("patientdto", mediscreenService.getPatientRisk(id));
+        model.addAttribute("patientdto", mediscreenService.getPatientAssessmentRiskById(id));
         Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("patient", patient);
         return "/assessment/view";

@@ -149,7 +149,12 @@ public class MediscreenServiceImpl implements MediscreenService {
         return patientAssessment;
     }
 
-    public PatientDTO getPatientRisk(int id) {
+    /**
+     * Call PatientProxy and DiagnosticProxy to get the patientDTO information with his diabetes assessment
+     * @param id id of the patient
+     * @return the patientDTO
+     */
+    public PatientDTO getPatientAssessmentRiskById(int id) {
         Patient patient = patientProxy.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
         Assessment patientAssessment = diagnosticProxy.getAssessmentById(id);
         LocalDate today = LocalDate.now();
@@ -163,6 +168,11 @@ public class MediscreenServiceImpl implements MediscreenService {
         return patientDTO;
     }
 
+    /**
+     * Call diagnosticProxy to get the patient's diabetes assessment by his firstname
+     * @param firstname firtname of the patient
+     * @return patient's assessment
+     */
     @Override
     public Assessment getPatientAssessmentByFirstname(String firstname) {
         Assessment patientAssessment = diagnosticProxy.getAssessmentByFamilyName(firstname);
