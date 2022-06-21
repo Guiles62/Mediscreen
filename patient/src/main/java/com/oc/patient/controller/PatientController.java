@@ -80,10 +80,10 @@ public class PatientController {
      * @return the patient
      */
     @PostMapping(value = "/patient/add")
-    public Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam LocalDate dob,
+    public Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam String dob,
                               @RequestParam String sex, @RequestParam String address, @RequestParam String phone) {
         logger.info("add a patient");
-        LocalDate birthday = LocalDate.parse(dob.toString()).minusYears(100);
+        LocalDate birthday = LocalDate.parse(dob);
         return patientService.addPatient(family,given,birthday,sex,address,phone);
     }
 

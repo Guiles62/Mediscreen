@@ -4,6 +4,7 @@ package com.oc.mediscreen.controller;
 import com.oc.mediscreen.model.Assessment;
 import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
+import com.oc.mediscreen.model.PatientDTO;
 import com.oc.mediscreen.service.MediscreenService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -220,15 +221,28 @@ public class MediscreenController {
         return "patHistory/add";
     }
 
+    /**
+     * Call mediscreenService to get patientDTO and patient informations for the assessment template
+     * @param id id of the patient
+     * @param model the patientDTO and patient affiliated
+     * @return the assessment/view template
+     */
     @GetMapping(value = "/assess/{id}")
     public String getPatientAssessmentById(@PathVariable("id") int id, Model model) {
         logger.info("Get the patient assessment");
-        model.addAttribute("patientdto", mediscreenService.getPatientAssessmentRiskById(id));
+        PatientDTO patientDTO = mediscreenService.getPatientAssessmentRiskById(id);
+        model.addAttribute("patientdto", patientDTO);
         Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("patient", patient);
         return "/assessment/view";
     }
 
+    /**
+     * Call mediscreenService to get patientDTO and patient informations for the assessment template
+     * @param firstname patient's firstname
+     * @param model the patient affiliated
+     * @return the patient/view template
+     */
     @GetMapping(value = "/assessment/{firstname}")
     public String getPatientAssessmentByFamilyName(@PathVariable("firstname") String firstname, Model model) {
         logger.info("Get the patient assessment by his firstname");

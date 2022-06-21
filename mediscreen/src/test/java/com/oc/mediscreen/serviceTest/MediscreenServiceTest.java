@@ -64,9 +64,9 @@ public class MediscreenServiceTest {
 
     @Test
     public void addPatientTest() {
-        when(patientProxy.addPatient("a","b", LocalDate.of(1983,06,03),"m","c","d")).thenReturn(patient);
+        when(patientProxy.addPatient("a","b", "1983-06-03","m","c","d")).thenReturn(patient);
         mediscreenService.addPatient("a","b", LocalDate.of(1983,06,03),"m","c","d");
-        verify(patientProxy,times(1)).addPatient("a","b", LocalDate.of(1983,06,03),"m","c","d");
+        verify(patientProxy,times(1)).addPatient("a","b", "1983-06-03","m","c","d");
     }
 
     @Test

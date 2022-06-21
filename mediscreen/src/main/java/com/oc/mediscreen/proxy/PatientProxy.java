@@ -19,7 +19,7 @@ public interface PatientProxy {
     Optional<Patient> getPatientById(@PathVariable int id);
 
     @PostMapping(value = "/patient/add")
-    Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam LocalDate dob,
+    Patient addPatient(@RequestParam String family, @RequestParam String given, @RequestParam String dob,
                        @RequestParam String sex, @RequestParam String address, @RequestParam String phone);
 
     @PostMapping(value = "patient/update")

@@ -76,10 +76,11 @@ public class PatientControllerTest {
 
     @Test
     public void addPatientTest() {
-        LocalDate birthdate = LocalDate.of(1983,06,03);
-        Mockito.when(patientService.addPatient("firstname","lastname",birthdate,"M","1234","123456")).thenReturn(patient);
+        String birthdate = "1983-06-03";
+        LocalDate date = LocalDate.parse(birthdate);
+        Mockito.when(patientService.addPatient("firstname","lastname",date,"M","1234","123456")).thenReturn(patient);
         patientController.addPatient("firstname","lastname",birthdate,"M","1234","123456");
-        verify(patientService,times(1)).addPatient("firstname","lastname",birthdate,"M","1234","123456");
+        verify(patientService,times(1)).addPatient("firstname","lastname",date,"M","1234","123456");
     }
 
     @Test

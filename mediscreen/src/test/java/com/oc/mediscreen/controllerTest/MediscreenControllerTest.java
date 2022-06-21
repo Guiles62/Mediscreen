@@ -4,6 +4,7 @@ import com.oc.mediscreen.controller.MediscreenController;
 import com.oc.mediscreen.model.Assessment;
 import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
+import com.oc.mediscreen.model.PatientDTO;
 import com.oc.mediscreen.proxy.DiagnosticProxy;
 import com.oc.mediscreen.proxy.HistoryProxy;
 import com.oc.mediscreen.proxy.PatientProxy;
@@ -42,6 +43,8 @@ public class MediscreenControllerTest {
     @InjectMocks
     private Patient patient;
     @InjectMocks
+    private PatientDTO patientDTO;
+    @InjectMocks
     private Assessment assessment;
     @InjectMocks
     private Note note;
@@ -60,6 +63,7 @@ public class MediscreenControllerTest {
         note = new Note();
         patientList.add(patient);
         noteList.add(note);
+        patientDTO = new PatientDTO();
     }
 
     @Test
@@ -133,9 +137,10 @@ public class MediscreenControllerTest {
     @Test
     public void getPatientAssessmentByIdTest() {
         Model model = new ConcurrentModel();
-        when(mediscreenService.getPatientAssessment(1)).thenReturn(assessment);
+        when(mediscreenService.getPatientAssessmentRiskById(1)).thenReturn(patientDTO);
+        when(mediscreenService.getPatientById(1)).thenReturn(Optional.ofNullable(patient));
         mediscreenController.getPatientAssessmentById(1,model);
-        verify(mediscreenService,times(1)).getPatientAssessment(1);
+        verify(mediscreenService,times(1)).getPatientAssessmentRiskById(1);
     }
 
     @Test
