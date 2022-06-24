@@ -75,9 +75,7 @@ public class MediscreenController {
         List<Note> notes = mediscreenService.getPatientNotes(id);
         model.addAttribute("notes", notes);
         Assessment assessmentById = mediscreenService.getPatientAssessment(id);
-        Assessment assessmentByFirstname = mediscreenService.getPatientAssessmentByFirstname(patient.getFirstname());
         model.addAttribute("assessment", assessmentById);
-        model.addAttribute("assessment", assessmentByFirstname);
         return "patient/view";
     }
 
@@ -235,18 +233,5 @@ public class MediscreenController {
         Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("patient", patient);
         return "/assessment/view";
-    }
-
-    /**
-     * Call mediscreenService to get patientDTO and patient informations for the assessment template
-     * @param firstname patient's firstname
-     * @param model the patient affiliated
-     * @return the patient/view template
-     */
-    @GetMapping(value = "/assessment/{firstname}")
-    public String getPatientAssessmentByFamilyName(@PathVariable("firstname") String firstname, Model model) {
-        logger.info("Get the patient assessment by his firstname");
-        model.addAttribute("assessment", mediscreenService.getPatientAssessmentByFirstname(firstname));
-        return "/patient/view";
     }
 }

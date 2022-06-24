@@ -103,11 +103,4 @@ public class MediscreenServiceTest {
         mediscreenService.getPatientAssessment(1);
         verify(diagnosticProxy,times(1)).getAssessmentById(1);
     }
-
-    @Test
-    public void getPatientAssessmentByFirstnameTest() {
-        when(diagnosticProxy.getAssessmentByFamilyName("a")).thenReturn(assessment);
-        mediscreenService.getPatientAssessmentByFirstname("a");
-        verify(diagnosticProxy,times(1)).getAssessmentByFamilyName("a");
-    }
 }

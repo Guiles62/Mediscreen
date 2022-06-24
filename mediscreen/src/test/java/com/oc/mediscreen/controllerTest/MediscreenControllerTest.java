@@ -142,12 +142,4 @@ public class MediscreenControllerTest {
         mediscreenController.getPatientAssessmentById(1,model);
         verify(mediscreenService,times(1)).getPatientAssessmentRiskById(1);
     }
-
-    @Test
-    public void getPatientAssessmentByFamilyNameTest() {
-        Model model = new ConcurrentModel();
-        when(mediscreenService.getPatientAssessmentByFirstname("g")).thenReturn(assessment);
-        mediscreenController.getPatientAssessmentByFamilyName("g",model);
-        verify(mediscreenService,times(1)).getPatientAssessmentByFirstname("g");
-    }
 }

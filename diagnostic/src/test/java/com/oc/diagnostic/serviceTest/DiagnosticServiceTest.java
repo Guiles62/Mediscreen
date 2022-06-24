@@ -54,10 +54,4 @@ public class DiagnosticServiceTest {
         assertEquals(diagnosticService.getAssessmentById(1).getRisk(),"Early onset");
     }
 
-    @Test
-    public void getAssessmentByFamilyName() {
-        when(patientProxy.getPatientByFirstname("firstname")).thenReturn(Optional.ofNullable(patient));
-        when(historyProxy.getPatientNote(1)).thenReturn(noteList);
-        assertEquals(diagnosticService.getAssessmentByFamilyName("firstname").getRisk(), "Early onset");
-    }
 }

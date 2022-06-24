@@ -161,15 +161,4 @@ public class MediscreenServiceImpl implements MediscreenService {
         patientDTO.setRisk(patientAssessment.getRisk());
         return patientDTO;
     }
-
-    /**
-     * Call diagnosticProxy to get the patient's diabetes assessment by his firstname
-     * @param firstname firtname of the patient
-     * @return patient's assessment
-     */
-    @Override
-    public Assessment getPatientAssessmentByFirstname(String firstname) {
-        Assessment patientAssessment = diagnosticProxy.getAssessmentByFamilyName(firstname);
-        return patientAssessment;
-    }
 }

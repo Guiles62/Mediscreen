@@ -46,11 +46,4 @@ public class DiagnosticControllerTest {
         when(diagnosticService.getAssessmentById(1)).thenReturn(assessment);
         mockMvc.perform(post("/assess/1")).andExpect(status().isOk());
     }
-
-    @Test
-    public void getAssessmentByFamilyNameTest() throws Exception {
-        when(diagnosticService.getAssessmentByFamilyName("familyname")).thenReturn(assessment);
-        mockMvc.perform(post("/assessment/familyname")).andExpect(status().isOk());
-    }
-
 }

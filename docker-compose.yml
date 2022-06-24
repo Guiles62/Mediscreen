@@ -1,0 +1,22 @@
+version: '3'
+services:
+  diagnostic :
+    depends_on:
+      - history
+      - patient
+    image: diagnostic
+    container_name: diagnosticappcontainer
+    ports:
+      - "8083:8083"
+
+  history :
+    image: history
+    container_name: historyappcontainer
+    ports:
+      - "8082:8082"
+
+  patient :
+    image: patient
+    container_name: patientappcontainer
+    ports:
+      - "8081:8081"

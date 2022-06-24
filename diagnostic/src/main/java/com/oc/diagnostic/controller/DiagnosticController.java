@@ -36,14 +36,4 @@ public class DiagnosticController {
         Assessment assessment = diagnosticService.getAssessmentById(id);
         return assessment;
     }
-
-    /**
-     * Call DiagnosticService to generate Patient assessment with patient's firstname
-     * @param firstname firstname of the patient
-     * @return patient's assessment
-     */
-    @PostMapping(value = "/assessment/{firstname}")
-    public Assessment getAssessmentByFamilyName(@PathVariable("firstname") String firstname){
-        return diagnosticService.getAssessmentByFamilyName(firstname);
-    }
 }
