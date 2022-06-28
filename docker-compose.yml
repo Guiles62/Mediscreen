@@ -1,5 +1,26 @@
-version: '3'
+version: "3"
 services:
+  mysql:
+    image: mediscreen_db
+    command: --default-authentication-plugin=mysql_native_password
+    container_name: patient_mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "mediscreen"
+      MYSQL_PASSWORD: "root"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    restart: always
+    ports:
+      - "33061:3306"
+
+  mongodb:
+    image: mongo
+    container_name: mongo
+    environment:
+      MONGO_INITDB_DATABASE: PatientNote
+    ports:
+      - "27017:27017"
+
   diagnostic :
     depends_on:
       - history
@@ -10,12 +31,22 @@ services:
       - "8083:8083"
 
   history :
+    depends_on:
+      - mongodb
     image: history
     container_name: historyappcontainer
     ports:
       - "8082:8082"
 
   patient :
+    depends_on:
+      - mysql
+    environment:
+      MEDISCREEN_FRONT_PROD_URL: http://localhost:8080
+      RAPPORT_URL: http://rapport:8083
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/mediscreen
+      SPRING_DATASOURCE_USERNAME: "root"
+      SPRING_DATASOURCE_PASSWORD: "root"
     image: patient
     container_name: patientappcontainer
     ports:

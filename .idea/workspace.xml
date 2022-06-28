@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7feb33f-3064-4d99-9bf3-0eb5394b3808.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7feb33f-3064-4d99-9bf3-0eb5394b3808.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd32d4ce-30ad-459c-a73a-967f757066da.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd32d4ce-30ad-459c-a73a-967f757066da.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe8edd18-a591-44ad-958a-5c010194d22c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe8edd18-a591-44ad-958a-5c010194d22c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/DiagnosticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/DiagnosticService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/controllerTest/DiagnosticControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/controllerTest/DiagnosticControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/serviceTest/DiagnosticServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/serviceTest/DiagnosticServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/history/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/MediscreenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/controllerTest/MediscreenControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/controllerTest/MediscreenControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/serviceTest/MediscreenServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/serviceTest/MediscreenServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/patient/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/docker-compose.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -92,14 +76,17 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/mediscreen/src/main/resources/static/css&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P4/PMOVE_Cliquet_Guillaume/PMOVE_01_code&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2906b4861d3927c0ea67e215195b8641&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;2906b4861d3927c0ea67e215195b8641&quot;,
+    &quot;two.files.diff.last.used.folder&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/patient/target/patient.jar!/BOOT-INF/lib&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -127,22 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
-    <configuration name="MediscreenServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mediscreen" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oc.mediscreen.serviceTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oc.mediscreen.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.mediscreen.serviceTest.MediscreenServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml.mysql: Compose Deployment">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MediscreenUI" />
       <method v="2">
@@ -192,6 +164,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.history: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="history" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -232,11 +217,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.history: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.patient: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="JUnit.MediscreenServiceTest" />
       <item itemvalue="Spring Boot.DiagnosticApplication" />
       <item itemvalue="Spring Boot.MediscreenApplication" />
       <item itemvalue="Spring Boot.HistoryApplication" />
@@ -244,11 +229,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.patient: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.history: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
-        <item itemvalue="JUnit.MediscreenServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -317,7 +302,19 @@
       <workItem from="1656059609757" duration="1317000" />
       <workItem from="1656061339795" duration="935000" />
       <workItem from="1656062344819" duration="246000" />
-      <workItem from="1656063382571" duration="910000" />
+      <workItem from="1656063382571" duration="1146000" />
+      <workItem from="1656067706996" duration="910000" />
+      <workItem from="1656068837896" duration="1658000" />
+      <workItem from="1656070937342" duration="1369000" />
+      <workItem from="1656073941632" duration="1037000" />
+      <workItem from="1656077426037" duration="284000" />
+      <workItem from="1656081130181" duration="1058000" />
+      <workItem from="1656314070323" duration="6921000" />
+      <workItem from="1656327998290" duration="274000" />
+      <workItem from="1656329775588" duration="6236000" />
+      <workItem from="1656339197510" duration="370000" />
+      <workItem from="1656351059220" duration="1374000" />
+      <workItem from="1656398739582" duration="9607000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -480,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655805337609</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="change patient application.properties for docker">
+      <created>1656064511303</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1656064511303</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +531,8 @@
     <MESSAGE value="add docker-compose" />
     <MESSAGE value="add patientDTO and assessment template changes" />
     <MESSAGE value="add changes for patient's birthday compatibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="add changes for patient's birthday compatibility" />
+    <MESSAGE value="change patient application.properties for docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="change patient application.properties for docker" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mediscreen$MediscreenControllerTest_getPatientAssessmentByIdTest.ic" NAME="MediscreenControllerTest.getPatientAssessmentByIdTest Coverage Results" MODIFIED="1655805210532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
