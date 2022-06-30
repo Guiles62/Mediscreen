@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient( name = "history", url = "localhost:8082")
+@FeignClient( name = "history", url = "${history.url}")
 public interface HistoryProxy {
 
     @PostMapping(value = "patHistory/add")

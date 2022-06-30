@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-@FeignClient( name = "patient", url = "localhost:8081")
+@FeignClient( name = "patient", url = "${patient.url}")
 public interface PatientProxy {
 
     @GetMapping(value = "/patient/list")

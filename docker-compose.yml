@@ -1,8 +1,7 @@
 version: "3"
 services:
   mysql:
-    image: mediscreen_db
-    command: --default-authentication-plugin=mysql_native_password
+    image: mysql_db
     container_name: patient_mysql_db
     environment:
       MYSQL_ROOT_PASSWORD: "root"
@@ -14,10 +13,15 @@ services:
       - "33061:3306"
 
   mongodb:
-    image: mongo
+    image: mongo:5
     container_name: mongo
+    network_mode: host
     environment:
-      MONGO_INITDB_DATABASE: PatientNote
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo-volume:/data/db
     ports:
       - "27017:27017"
 
@@ -33,6 +37,8 @@ services:
   history :
     depends_on:
       - mongodb
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongodb
     image: history
     container_name: historyappcontainer
     ports:
@@ -42,8 +48,6 @@ services:
     depends_on:
       - mysql
     environment:
-      MEDISCREEN_FRONT_PROD_URL: http://localhost:8080
-      RAPPORT_URL: http://rapport:8083
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/mediscreen
       SPRING_DATASOURCE_USERNAME: "root"
       SPRING_DATASOURCE_PASSWORD: "root"
@@ -51,3 +55,16 @@ services:
     container_name: patientappcontainer
     ports:
       - "8081:8081"
+
+  #mediscreen:
+   # depends_on:
+    #  - patient
+     # - history
+      #- diagnostic
+    #restart: always
+    #image: mediscreen_front
+    #container_name: mediscreen
+    #ports:
+    #  - "8080:8080"
+
+

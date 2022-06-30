@@ -1,0 +1,7 @@
+show dbs
+show dbs
+show dbs
+use PatientNote
+db.createCollections("note")
+db.createCollection("note")
+show dbs

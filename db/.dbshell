@@ -1,0 +1,13 @@
+ip
+show ip
+mongo conf
+mongo.conf
+mongo.conf()
+use PatientNote
+db.status
+db.note
+show
+show collections
+use PatientNote
+show collections
+show collections;

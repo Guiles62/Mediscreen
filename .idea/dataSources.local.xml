@@ -38,5 +38,18 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="PatientNote@localhost" uuid="c3a62fbf-6a03-4996-9381-0ef25140d5c1">
+      <database-info product="Mongo DB" version="" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.15" dbms="UNKNOWN" exact-version="0" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>

@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-@FeignClient( name = "diagnostic", url = "localhost:8083")
+@FeignClient( name = "diagnostic", url = "${diagnostic.url}")
 public interface DiagnosticProxy {
 
     @PostMapping(value = "/assess/{id}")
