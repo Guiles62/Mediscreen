@@ -1,4 +1,4 @@
-version: "3"
+version: '3'
 services:
   mysql:
     image: mysql_db
@@ -9,28 +9,26 @@ services:
       MYSQL_PASSWORD: "root"
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     restart: always
+    volumes:
+      - mysql-data:/data/db
     ports:
       - "33061:3306"
 
   mongodb:
     image: mongo:5
     container_name: mongo
-    network_mode: host
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
-      - ./mongo-volume:/data/db
+      - mongo-data:/data/db
     ports:
       - "27017:27017"
 
   diagnostic :
-    depends_on:
-      - history
-      - patient
     image: diagnostic
     container_name: diagnosticappcontainer
+    environment:
+      PATIENT_URL: http://patient:8081
+      HISTORY_URL: http://history:8082
+      MEDISCREEN_URL: http://mediscreen:8080
     ports:
       - "8083:8083"
 
@@ -39,6 +37,8 @@ services:
       - mongodb
     environment:
       SPRING_DATA_MONGODB_HOST: mongodb
+      SPRING_DATA_MONGODB_DATABASE: PatientNote
+      MEDISCREEN_URL: http://mediscreen:8080
     image: history
     container_name: historyappcontainer
     ports:
@@ -48,6 +48,8 @@ services:
     depends_on:
       - mysql
     environment:
+      DIAGNOSTIC_URL: http://diagnostic:8083
+      MEDISCREEN_URL: http://mediscreen:8080
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/mediscreen
       SPRING_DATASOURCE_USERNAME: "root"
       SPRING_DATASOURCE_PASSWORD: "root"
@@ -56,15 +58,22 @@ services:
     ports:
       - "8081:8081"
 
-  #mediscreen:
-   # depends_on:
-    #  - patient
-     # - history
-      #- diagnostic
-    #restart: always
-    #image: mediscreen_front
-    #container_name: mediscreen
-    #ports:
-    #  - "8080:8080"
+  mediscreen:
+    depends_on:
+      - patient
+      - history
+      - diagnostic
+    restart: always
+    image: mediscreen
+    environment:
+      PATIENT_URL: http://patient:8081
+      HISTORY_URL: http://history:8082
+      DIAGNOSTIC_URL: http://diagnostic:8083
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql-data:
+  mongo-data:
 
 

@@ -15,6 +15,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -44,6 +45,6 @@ public class DiagnosticControllerTest {
     @Test
     public void getAssessmentByIdTest() throws Exception {
         when(diagnosticService.getAssessmentById(1)).thenReturn(assessment);
-        mockMvc.perform(post("/assess/1")).andExpect(status().isOk());
+        mockMvc.perform(get("/assess/1")).andExpect(status().isOk());
     }
 }

@@ -232,6 +232,6 @@ public class MediscreenController {
         model.addAttribute("patientdto", patientDTO);
         Patient patient = mediscreenService.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("patient", patient);
-        return "/assessment/view";
+        return "assessment/view";
     }
 }

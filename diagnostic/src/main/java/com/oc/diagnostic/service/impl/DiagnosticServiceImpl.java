@@ -46,12 +46,12 @@ public class DiagnosticServiceImpl implements DiagnosticService {
     @Override
     public Assessment getAssessmentById(int id) {
         Assessment patientAssessment = new Assessment();
+        Patient patient = patientProxy.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
         String[] terms={"Hémoglobine A1C","Microalbumine","Taille","Poids","Fume","Anormal","Cholestérol","Vertige","Rechute","Réaction","Anticorps"};
         List<String> triggeringTerms = new ArrayList<>();
         for (String term : terms){
             triggeringTerms.add(term);
         }
-        Patient patient = patientProxy.getPatientById(id).orElseThrow(() -> new IllegalArgumentException("Invalid patient Id:" + id));
         List<Note> patientNotes = historyProxy.getPatientNote(id);
         LocalDate today = LocalDate.now();
         LocalDate patientBirthday = patient.getBirthday();

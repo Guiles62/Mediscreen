@@ -2,6 +2,7 @@ package com.oc.diagnostic.controller;
 
 import com.oc.diagnostic.model.Assessment;
 import com.oc.diagnostic.service.DiagnosticService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,7 +32,7 @@ public class DiagnosticController {
      * @param id id of the patient
      * @return patient's assessment
      */
-    @PostMapping(value = "/assess/{id}")
+    @GetMapping(value = "/assess/{id}")
     public Assessment getAssessmentById(@PathVariable("id") int id) {
         Assessment assessment = diagnosticService.getAssessmentById(id);
         return assessment;

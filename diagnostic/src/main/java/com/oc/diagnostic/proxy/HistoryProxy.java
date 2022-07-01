@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient( name = "history", url = "${history.url}")
+@FeignClient( name = "history", url = "${history_url}")
 public interface HistoryProxy {
 
     @GetMapping(value = "patHistory/{patId}")

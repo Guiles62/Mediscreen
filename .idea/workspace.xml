@@ -7,17 +7,30 @@
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3a62fbf-6a03-4996-9381-0ef25140d5c1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7feb33f-3064-4d99-9bf3-0eb5394b3808.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/controller/DiagnosticController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/HistoryProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/HistoryProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/proxy/PatientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/java/com/oc/diagnostic/service/impl/DiagnosticServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagnostic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/controllerTest/DiagnosticControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/src/test/java/com/oc/diagnostic/controllerTest/DiagnosticControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/history/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/controller/MediscreenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/DiagnosticProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/DiagnosticProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/HistoryProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/HistoryProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/proxy/PatientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/collection-2--4154747167643099927.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/collection-2--4154747167643099927.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/collection-4--4154747167643099927.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/collection-4--4154747167643099927.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/index-3--4154747167643099927.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-3--4154747167643099927.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/index-5--4154747167643099927.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-5--4154747167643099927.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/index-6--4154747167643099927.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/index-6--4154747167643099927.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/mongod.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-volume/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-volume/sizeStorer.wt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +137,37 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.mongodb: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+    <configuration name="DiagnosticControllerTest.getAssessmentByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diagnostic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.diagnostic.controllerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic.controllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.diagnostic.controllerTest.DiagnosticControllerTest" />
+      <option name="METHOD_NAME" value="getAssessmentByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.oc.diagnostic.controllerTest in diagnostic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diagnostic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.diagnostic.controllerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic.controllerTest" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MediscreenUI" />
       <method v="2">
@@ -174,19 +217,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.history: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="history" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.mediscreen: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -213,25 +243,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.patient: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="patient" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yml.mediscreen: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.history: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.patient: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="JUnit.DiagnosticControllerTest.getAssessmentByIdTest" />
+      <item itemvalue="JUnit.com.oc.diagnostic.controllerTest in diagnostic" />
       <item itemvalue="Spring Boot.DiagnosticApplication" />
       <item itemvalue="Spring Boot.MediscreenApplication" />
       <item itemvalue="Spring Boot.HistoryApplication" />
@@ -239,11 +256,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="JUnit.DiagnosticControllerTest.getAssessmentByIdTest" />
+        <item itemvalue="JUnit.com.oc.diagnostic.controllerTest in diagnostic" />
+        <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.mediscreen: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.patient: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.history: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +352,10 @@
       <workItem from="1656509532349" duration="4218000" />
       <workItem from="1656534787535" duration="580000" />
       <workItem from="1656536296033" duration="157000" />
-      <workItem from="1656574458753" duration="6274000" />
+      <workItem from="1656574458753" duration="21065000" />
+      <workItem from="1656598305523" duration="174000" />
+      <workItem from="1656606611592" duration="1977000" />
+      <workItem from="1656659152351" duration="5214000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -512,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656413192983</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="mongo on docker">
+      <created>1656580896796</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1656580896796</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +588,8 @@
     <MESSAGE value="add changes for patient's birthday compatibility" />
     <MESSAGE value="change patient application.properties for docker" />
     <MESSAGE value="add dockerfile BDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dockerfile BDD" />
+    <MESSAGE value="mongo on docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongo on docker" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mediscreen$MediscreenControllerTest_getPatientAssessmentByIdTest.ic" NAME="MediscreenControllerTest.getPatientAssessmentByIdTest Coverage Results" MODIFIED="1655805210532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
