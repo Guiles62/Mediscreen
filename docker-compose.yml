@@ -17,6 +17,9 @@ services:
   mongodb:
     image: mongo:5
     container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
       - mongo-data:/data/db
     ports:
@@ -38,6 +41,9 @@ services:
     environment:
       SPRING_DATA_MONGODB_HOST: mongodb
       SPRING_DATA_MONGODB_DATABASE: PatientNote
+      SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE: admin
+      SPRING_DATA_MONGODB_USERNAME: root
+      SPRING_DATA_MONGODB_PASSWORD: root
       MEDISCREEN_URL: http://mediscreen:8080
     image: history
     container_name: historyappcontainer
