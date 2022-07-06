@@ -1,0 +1,190 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > DiagnosticServiceImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.oc.diagnostic.service.impl</a>
+</div>
+
+<h1>Coverage Summary for Class: DiagnosticServiceImpl (com.oc.diagnostic.service.impl)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">DiagnosticServiceImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    91,4%
+  </span>
+  <span class="absValue">
+    (32/35)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.oc.diagnostic.service.impl;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import com.oc.diagnostic.model.Assessment;
+<i class="no-highlight">4</i>&nbsp;import com.oc.diagnostic.model.Note;
+<i class="no-highlight">5</i>&nbsp;import com.oc.diagnostic.model.Patient;
+<i class="no-highlight">6</i>&nbsp;import com.oc.diagnostic.proxy.HistoryProxy;
+<i class="no-highlight">7</i>&nbsp;import com.oc.diagnostic.proxy.PatientProxy;
+<i class="no-highlight">8</i>&nbsp;import com.oc.diagnostic.service.DiagnosticService;
+<i class="no-highlight">9</i>&nbsp;import org.springframework.stereotype.Service;
+<i class="no-highlight">10</i>&nbsp;
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;import java.text.Normalizer;
+<i class="no-highlight">13</i>&nbsp;import java.time.LocalDate;
+<i class="no-highlight">14</i>&nbsp;import java.time.temporal.ChronoUnit;
+<i class="no-highlight">15</i>&nbsp;import java.util.ArrayList;
+<i class="no-highlight">16</i>&nbsp;import java.util.List;
+<i class="no-highlight">17</i>&nbsp;
+<i class="no-highlight">18</i>&nbsp;/**
+<i class="no-highlight">19</i>&nbsp; * &lt;b&gt;DiagnosticServiceImpl is the class which implement DiagnosticService and call proxies to get or send data&lt;/b&gt;
+<i class="no-highlight">20</i>&nbsp; * &lt;p&gt;
+<i class="no-highlight">21</i>&nbsp; *     contains methods
+<i class="no-highlight">22</i>&nbsp; *     &lt;ul&gt;
+<i class="no-highlight">23</i>&nbsp; *         &lt;li&gt;getAssessmentById&lt;/li&gt;
+<i class="no-highlight">24</i>&nbsp; *         &lt;li&gt;getAssessmentByFamilyName&lt;/li&gt;
+<i class="no-highlight">25</i>&nbsp; *     &lt;/ul&gt;
+<i class="no-highlight">26</i>&nbsp; * &lt;/p&gt;
+<i class="no-highlight">27</i>&nbsp; * @author Guillaume C
+<i class="no-highlight">28</i>&nbsp; */
+<i class="no-highlight">29</i>&nbsp;@Service
+<i class="no-highlight">30</i>&nbsp;public class DiagnosticServiceImpl implements DiagnosticService {
+<i class="no-highlight">31</i>&nbsp;
+<i class="no-highlight">32</i>&nbsp;    private final PatientProxy patientProxy;
+<i class="no-highlight">33</i>&nbsp;    private final HistoryProxy historyProxy;
+<i class="no-highlight">34</i>&nbsp;
+<b class="fc"><i class="no-highlight">35</i>&nbsp;    public DiagnosticServiceImpl(PatientProxy patientProxy, HistoryProxy historyProxy) {</b>
+<b class="fc"><i class="no-highlight">36</i>&nbsp;        this.patientProxy = patientProxy;</b>
+<b class="fc"><i class="no-highlight">37</i>&nbsp;        this.historyProxy = historyProxy;</b>
+<i class="no-highlight">38</i>&nbsp;    }
+<i class="no-highlight">39</i>&nbsp;
+<i class="no-highlight">40</i>&nbsp;    /**
+<i class="no-highlight">41</i>&nbsp;     * Call PatientProxy and HistoryProxy to get data to generate the patient&#39;s assessment by his id
+<i class="no-highlight">42</i>&nbsp;     * Compare danger terms list to medical notes to generate assessment
+<i class="no-highlight">43</i>&nbsp;     * @param id id of the patient
+<i class="no-highlight">44</i>&nbsp;     * @return patient&#39;s assessment
+<i class="no-highlight">45</i>&nbsp;     */
+<i class="no-highlight">46</i>&nbsp;    @Override
+<i class="no-highlight">47</i>&nbsp;    public Assessment getAssessmentById(int id) {
+<b class="fc"><i class="no-highlight">48</i>&nbsp;        Assessment patientAssessment = new Assessment();</b>
+<b class="fc"><i class="no-highlight">49</i>&nbsp;        Patient patient = patientProxy.getPatientById(id).orElseThrow(() -&gt; new IllegalArgumentException(&quot;Invalid patient Id:&quot; + id));</b>
+<b class="fc"><i class="no-highlight">50</i>&nbsp;        String[] terms={&quot;Hémoglobine A1C&quot;,&quot;Microalbumine&quot;,&quot;Taille&quot;,&quot;Poids&quot;,&quot;Fume&quot;,&quot;Anormal&quot;,&quot;Cholestérol&quot;,&quot;Vertige&quot;,&quot;Rechute&quot;,&quot;Réaction&quot;,&quot;Anticorps&quot;};</b>
+<b class="fc"><i class="no-highlight">51</i>&nbsp;        List&lt;String&gt; triggeringTerms = new ArrayList&lt;&gt;();</b>
+<b class="fc"><i class="no-highlight">52</i>&nbsp;        for (String term : terms){</b>
+<b class="fc"><i class="no-highlight">53</i>&nbsp;            triggeringTerms.add(term);</b>
+<i class="no-highlight">54</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">55</i>&nbsp;        List&lt;Note&gt; patientNotes = historyProxy.getPatientNote(id);</b>
+<b class="fc"><i class="no-highlight">56</i>&nbsp;        LocalDate today = LocalDate.now();</b>
+<b class="fc"><i class="no-highlight">57</i>&nbsp;        LocalDate patientBirthday = patient.getBirthday();</b>
+<b class="fc"><i class="no-highlight">58</i>&nbsp;        long age = ChronoUnit.YEARS.between(patientBirthday,today);</b>
+<b class="fc"><i class="no-highlight">59</i>&nbsp;        String sex = patient.getGender();</b>
+<b class="fc"><i class="no-highlight">60</i>&nbsp;        int riskCount = 0;</b>
+<b class="fc"><i class="no-highlight">61</i>&nbsp;        for(Note note : patientNotes) {</b>
+<b class="fc"><i class="no-highlight">62</i>&nbsp;            String patientNote = note.getCommentary().toLowerCase();</b>
+<b class="fc"><i class="no-highlight">63</i>&nbsp;            patientNote = Normalizer.normalize(patientNote, Normalizer.Form.NFD);</b>
+<b class="fc"><i class="no-highlight">64</i>&nbsp;            patientNote = patientNote.replaceAll(&quot;[\\p{InCombiningDiacriticalMarks}]&quot;, &quot;&quot;);</b>
+<b class="fc"><i class="no-highlight">65</i>&nbsp;            for(String dangerTerm : triggeringTerms){</b>
+<b class="fc"><i class="no-highlight">66</i>&nbsp;                String inLowerCase = dangerTerm.toLowerCase();</b>
+<b class="fc"><i class="no-highlight">67</i>&nbsp;                inLowerCase = Normalizer.normalize(inLowerCase, Normalizer.Form.NFD);</b>
+<b class="fc"><i class="no-highlight">68</i>&nbsp;                inLowerCase = inLowerCase.replaceAll(&quot;[\\p{InCombiningDiacriticalMarks}]&quot;, &quot;&quot;);</b>
+<b class="fc"><i class="no-highlight">69</i>&nbsp;                if (patientNote.contains(inLowerCase)){</b>
+<b class="fc"><i class="no-highlight">70</i>&nbsp;                    riskCount++;</b>
+<i class="no-highlight">71</i>&nbsp;                }
+<b class="fc"><i class="no-highlight">72</i>&nbsp;            }</b>
+<b class="fc"><i class="no-highlight">73</i>&nbsp;        }</b>
+<b class="fc"><i class="no-highlight">74</i>&nbsp;        if(riskCount &gt;=2 &amp;&amp; riskCount &lt;6 &amp;&amp; age &gt; 30){</b>
+<b class="nc"><i class="no-highlight">75</i>&nbsp;            patientAssessment.setRisk(&quot;Borderline&quot;);</b>
+<b class="fc"><i class="no-highlight">76</i>&nbsp;        } else if (sex == &quot;M&quot; &amp;&amp; age &lt; 30 &amp;&amp; riskCount == 3 || sex == &quot;F&quot; &amp;&amp; age &lt; 30 &amp;&amp; riskCount == 4 || age &gt; 30 &amp;&amp; riskCount &gt;= 6 &amp;&amp; riskCount &lt;8) {</b>
+<b class="nc"><i class="no-highlight">77</i>&nbsp;            patientAssessment.setRisk(&quot;In Danger&quot;);</b>
+<b class="fc"><i class="no-highlight">78</i>&nbsp;        } else if (sex == &quot;M&quot; &amp;&amp; age &lt; 30 &amp;&amp; riskCount == 5 || sex == &quot;F&quot; &amp;&amp; age &lt; 30 &amp;&amp; riskCount == 7 || age &gt; 30 &amp;&amp; riskCount &gt;= 8) {</b>
+<b class="fc"><i class="no-highlight">79</i>&nbsp;            patientAssessment.setRisk(&quot;Early onset&quot;);</b>
+<i class="no-highlight">80</i>&nbsp;        } else {
+<b class="nc"><i class="no-highlight">81</i>&nbsp;            patientAssessment.setRisk(&quot;None&quot;);</b>
+<i class="no-highlight">82</i>&nbsp;        }
+<b class="fc"><i class="no-highlight">83</i>&nbsp;        return patientAssessment;</b>
+<i class="no-highlight">84</i>&nbsp;    }
+<i class="no-highlight">85</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-07-06 13:58</div>
+</div>
+</body>
+</html>

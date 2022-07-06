@@ -34,8 +34,6 @@ import java.util.Optional;
 @Service
 public class MediscreenServiceImpl implements MediscreenService {
 
-
-
     private final PatientProxy patientProxy;
     private final HistoryProxy historyProxy;
     private final DiagnosticProxy diagnosticProxy;

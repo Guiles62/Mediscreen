@@ -1,0 +1,210 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > PatientServiceImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.oc.patient.service.impl</a>
+</div>
+
+<h1>Coverage Summary for Class: PatientServiceImpl (com.oc.patient.service.impl)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">PatientServiceImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (15/15)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.oc.patient.service.impl;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import com.oc.patient.model.Patient;
+<i class="no-highlight">4</i>&nbsp;import com.oc.patient.repository.PatientRepository;
+<i class="no-highlight">5</i>&nbsp;import com.oc.patient.service.PatientService;
+<i class="no-highlight">6</i>&nbsp;import org.springframework.stereotype.Service;
+<i class="no-highlight">7</i>&nbsp;
+<i class="no-highlight">8</i>&nbsp;import java.time.LocalDate;
+<i class="no-highlight">9</i>&nbsp;import java.util.List;
+<i class="no-highlight">10</i>&nbsp;import java.util.Optional;
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;/**
+<i class="no-highlight">13</i>&nbsp; * &lt;b&gt;PatientServiceImpl is the class which implement PatientService and call PatientRepository to get or send data&lt;/b&gt;
+<i class="no-highlight">14</i>&nbsp; * &lt;p&gt;
+<i class="no-highlight">15</i>&nbsp; *     contains methods
+<i class="no-highlight">16</i>&nbsp; *     &lt;ul&gt;
+<i class="no-highlight">17</i>&nbsp; *         &lt;li&gt;getPatientList&lt;/li&gt;
+<i class="no-highlight">18</i>&nbsp; *         &lt;li&gt;findPatientById&lt;/li&gt;
+<i class="no-highlight">19</i>&nbsp; *         &lt;li&gt;findByPatientFirstname&lt;/li&gt;
+<i class="no-highlight">20</i>&nbsp; *         &lt;li&gt;addPatient&lt;/li&gt;
+<i class="no-highlight">21</i>&nbsp; *         &lt;li&gt;updatePatient&lt;/li&gt;
+<i class="no-highlight">22</i>&nbsp; *         &lt;li&gt;deletePatient&lt;/li&gt;
+<i class="no-highlight">23</i>&nbsp; *     &lt;/ul&gt;
+<i class="no-highlight">24</i>&nbsp; * &lt;/p&gt;
+<i class="no-highlight">25</i>&nbsp; * @author Guillaume C
+<i class="no-highlight">26</i>&nbsp; */
+<i class="no-highlight">27</i>&nbsp;@Service
+<i class="no-highlight">28</i>&nbsp;public class PatientServiceImpl implements PatientService {
+<i class="no-highlight">29</i>&nbsp;
+<i class="no-highlight">30</i>&nbsp;    private PatientRepository patientRepository;
+<i class="no-highlight">31</i>&nbsp;
+<b class="fc"><i class="no-highlight">32</i>&nbsp;    public PatientServiceImpl(PatientRepository patientRepository) {</b>
+<b class="fc"><i class="no-highlight">33</i>&nbsp;        this.patientRepository = patientRepository;</b>
+<i class="no-highlight">34</i>&nbsp;    }
+<i class="no-highlight">35</i>&nbsp;
+<i class="no-highlight">36</i>&nbsp;    /**
+<i class="no-highlight">37</i>&nbsp;     * Call PatientRepository to get the patient list
+<i class="no-highlight">38</i>&nbsp;     * @return a list of patient
+<i class="no-highlight">39</i>&nbsp;     */
+<i class="no-highlight">40</i>&nbsp;    @Override
+<i class="no-highlight">41</i>&nbsp;    public List&lt;Patient&gt; getPatientList() {
+<b class="fc"><i class="no-highlight">42</i>&nbsp;        return patientRepository.findAll();</b>
+<i class="no-highlight">43</i>&nbsp;    }
+<i class="no-highlight">44</i>&nbsp;
+<i class="no-highlight">45</i>&nbsp;    /**
+<i class="no-highlight">46</i>&nbsp;     * Call PatientRepository to find a patient by his id
+<i class="no-highlight">47</i>&nbsp;     * @param id patient&#39;s id
+<i class="no-highlight">48</i>&nbsp;     * @return the patient
+<i class="no-highlight">49</i>&nbsp;     */
+<i class="no-highlight">50</i>&nbsp;    @Override
+<i class="no-highlight">51</i>&nbsp;    public Optional&lt;Patient&gt; findPatientById(int id) {
+<b class="fc"><i class="no-highlight">52</i>&nbsp;        return patientRepository.findById(id);</b>
+<i class="no-highlight">53</i>&nbsp;    }
+<i class="no-highlight">54</i>&nbsp;
+<i class="no-highlight">55</i>&nbsp;    /**
+<i class="no-highlight">56</i>&nbsp;     * Call PatientRepository to find a patient by his firstname
+<i class="no-highlight">57</i>&nbsp;     * @param firstname patient&#39;s firstname
+<i class="no-highlight">58</i>&nbsp;     * @return the patient
+<i class="no-highlight">59</i>&nbsp;     */
+<i class="no-highlight">60</i>&nbsp;    @Override
+<i class="no-highlight">61</i>&nbsp;    public Optional&lt;Patient&gt; findByPatientFirstname(String firstname) {
+<b class="fc"><i class="no-highlight">62</i>&nbsp;        return patientRepository.findByFirstname(firstname);</b>
+<i class="no-highlight">63</i>&nbsp;    }
+<i class="no-highlight">64</i>&nbsp;
+<i class="no-highlight">65</i>&nbsp;    /**
+<i class="no-highlight">66</i>&nbsp;     * Call PatientRepository to save a new patient in database
+<i class="no-highlight">67</i>&nbsp;     * @param family patient&#39;s firstname
+<i class="no-highlight">68</i>&nbsp;     * @param given patient&#39;s lastname
+<i class="no-highlight">69</i>&nbsp;     * @param dob patient&#39;s birthdate
+<i class="no-highlight">70</i>&nbsp;     * @param sex patient&#39;s sex
+<i class="no-highlight">71</i>&nbsp;     * @param address patient&#39;s address
+<i class="no-highlight">72</i>&nbsp;     * @param phone patient&#39;s phone
+<i class="no-highlight">73</i>&nbsp;     * @return the patient
+<i class="no-highlight">74</i>&nbsp;     */
+<i class="no-highlight">75</i>&nbsp;    @Override
+<i class="no-highlight">76</i>&nbsp;    public Patient addPatient(String family, String given, LocalDate dob, String sex, String address, String phone) {
+<b class="fc"><i class="no-highlight">77</i>&nbsp;        Patient patient = new Patient();</b>
+<b class="fc"><i class="no-highlight">78</i>&nbsp;        patient.setFirstname(family);</b>
+<b class="fc"><i class="no-highlight">79</i>&nbsp;        patient.setLastname(given);</b>
+<b class="fc"><i class="no-highlight">80</i>&nbsp;        patient.setBirthday(dob);</b>
+<b class="fc"><i class="no-highlight">81</i>&nbsp;        patient.setGender(sex);</b>
+<b class="fc"><i class="no-highlight">82</i>&nbsp;        patient.setAddress(address);</b>
+<b class="fc"><i class="no-highlight">83</i>&nbsp;        patient.setPhone(phone);</b>
+<b class="fc"><i class="no-highlight">84</i>&nbsp;        return patientRepository.save(patient);</b>
+<i class="no-highlight">85</i>&nbsp;    }
+<i class="no-highlight">86</i>&nbsp;
+<i class="no-highlight">87</i>&nbsp;    /**
+<i class="no-highlight">88</i>&nbsp;     * Call PatientRepository to update an existing patient
+<i class="no-highlight">89</i>&nbsp;     * @param patient the patient with update information to save
+<i class="no-highlight">90</i>&nbsp;     * @return the patient
+<i class="no-highlight">91</i>&nbsp;     */
+<i class="no-highlight">92</i>&nbsp;    @Override
+<i class="no-highlight">93</i>&nbsp;    public Patient updatePatient(Patient patient) {
+<b class="fc"><i class="no-highlight">94</i>&nbsp;        return patientRepository.save(patient);</b>
+<i class="no-highlight">95</i>&nbsp;    }
+<i class="no-highlight">96</i>&nbsp;
+<i class="no-highlight">97</i>&nbsp;    /**
+<i class="no-highlight">98</i>&nbsp;     * Call PatientRepository to delete a patient from the database
+<i class="no-highlight">99</i>&nbsp;     * @param patient the patient we want to delete
+<i class="no-highlight">100</i>&nbsp;     */
+<i class="no-highlight">101</i>&nbsp;    @Override
+<i class="no-highlight">102</i>&nbsp;    public void deletePatient(Patient patient) {
+<b class="fc"><i class="no-highlight">103</i>&nbsp;        patientRepository.delete(patient);</b>
+<i class="no-highlight">104</i>&nbsp;    }
+<i class="no-highlight">105</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-07-06 13:58</div>
+</div>
+</body>
+</html>

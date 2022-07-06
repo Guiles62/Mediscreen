@@ -1,0 +1,103 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > PatientRepository</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.oc.patient.repository</a>
+</div>
+
+<h1>Coverage Summary for Class: PatientRepository (com.oc.patient.repository)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">PatientRepository$MockitoMock$nzKiHqwG</td>
+  </tr>
+  <tr>
+    <td class="name">PatientRepository$MockitoMock$nzKiHqwG$auxiliary$6UncmRux</td>
+  </tr>
+  <tr>
+    <td class="name">PatientRepository$MockitoMock$nzKiHqwG$auxiliary$IJvtvq0x</td>
+  </tr>
+  <tr>
+    <td class="name">PatientRepository$MockitoMock$nzKiHqwG$auxiliary$xsnBcv6R</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.oc.patient.repository;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import com.oc.patient.model.Patient;
+<i class="no-highlight">4</i>&nbsp;import org.springframework.data.jpa.repository.JpaRepository;
+<i class="no-highlight">5</i>&nbsp;import org.springframework.stereotype.Repository;
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;import java.util.Optional;
+<i class="no-highlight">8</i>&nbsp;
+<i class="no-highlight">9</i>&nbsp;/**
+<i class="no-highlight">10</i>&nbsp; * &lt;b&gt;PatientRepository is an interface which extends JpaRepository and send or receive data from and for database&lt;/b&gt;
+<i class="no-highlight">11</i>&nbsp; * &lt;p&gt;
+<i class="no-highlight">12</i>&nbsp; *     contains method
+<i class="no-highlight">13</i>&nbsp; *     &lt;ul&gt;
+<i class="no-highlight">14</i>&nbsp; *         &lt;li&gt;findByFirstname&lt;/li&gt;
+<i class="no-highlight">15</i>&nbsp; *     &lt;/ul&gt;
+<i class="no-highlight">16</i>&nbsp; * &lt;/p&gt;
+<i class="no-highlight">17</i>&nbsp; * @author Guillaume C
+<i class="no-highlight">18</i>&nbsp; */
+<i class="no-highlight">19</i>&nbsp;@Repository
+<i class="no-highlight">20</i>&nbsp;public interface PatientRepository extends JpaRepository&lt;Patient, Integer&gt; {
+<i class="no-highlight">21</i>&nbsp;    Optional&lt;Patient&gt; findByFirstname(String firstname);
+<i class="no-highlight">22</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-07-06 13:58</div>
+</div>
+</body>
+</html>

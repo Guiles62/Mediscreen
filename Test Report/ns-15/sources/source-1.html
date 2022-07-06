@@ -1,0 +1,111 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > MediscreenService</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.oc.mediscreen.service</a>
+</div>
+
+<h1>Coverage Summary for Class: MediscreenService (com.oc.mediscreen.service)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">MediscreenService</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.oc.mediscreen.service;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import com.oc.mediscreen.model.Assessment;
+<i class="no-highlight">4</i>&nbsp;import com.oc.mediscreen.model.Note;
+<i class="no-highlight">5</i>&nbsp;import com.oc.mediscreen.model.Patient;
+<i class="no-highlight">6</i>&nbsp;import com.oc.mediscreen.model.PatientDTO;
+<i class="no-highlight">7</i>&nbsp;
+<i class="no-highlight">8</i>&nbsp;import java.time.LocalDate;
+<i class="no-highlight">9</i>&nbsp;import java.util.List;
+<i class="no-highlight">10</i>&nbsp;import java.util.Optional;
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;/**
+<i class="no-highlight">13</i>&nbsp; * &lt;b&gt;MediscreenService is the interface that will be implemented by MediscreenServiceImpl&lt;/b&gt;
+<i class="no-highlight">14</i>&nbsp; * &lt;p&gt;
+<i class="no-highlight">15</i>&nbsp; *     contain methods
+<i class="no-highlight">16</i>&nbsp; *     &lt;ul&gt;
+<i class="no-highlight">17</i>&nbsp; *         &lt;li&gt;getPatientList&lt;/li&gt;
+<i class="no-highlight">18</i>&nbsp; *         &lt;li&gt;getPatientById&lt;/li&gt;
+<i class="no-highlight">19</i>&nbsp; *         &lt;li&gt;addPatient&lt;/li&gt;
+<i class="no-highlight">20</i>&nbsp; *         &lt;li&gt;updatePatient&lt;/li&gt;
+<i class="no-highlight">21</i>&nbsp; *         &lt;li&gt;deletePatient&lt;/li&gt;
+<i class="no-highlight">22</i>&nbsp; *         &lt;li&gt;getPatientNotes&lt;/li&gt;
+<i class="no-highlight">23</i>&nbsp; *         &lt;li&gt;addPatientNote&lt;/li&gt;
+<i class="no-highlight">24</i>&nbsp; *     &lt;/ul&gt;
+<i class="no-highlight">25</i>&nbsp; * &lt;/p&gt;
+<i class="no-highlight">26</i>&nbsp; * @author Guillaume C
+<i class="no-highlight">27</i>&nbsp; */
+<i class="no-highlight">28</i>&nbsp;
+<i class="no-highlight">29</i>&nbsp;public interface MediscreenService {
+<i class="no-highlight">30</i>&nbsp;
+<i class="no-highlight">31</i>&nbsp;
+<i class="no-highlight">32</i>&nbsp;    List&lt;Patient&gt; getPatientList();
+<i class="no-highlight">33</i>&nbsp;    Optional&lt;Patient&gt; getPatientById(int id);
+<i class="no-highlight">34</i>&nbsp;    Patient addPatient(String family, String given, LocalDate dob,
+<i class="no-highlight">35</i>&nbsp;                       String sex, String address, String phone);
+<i class="no-highlight">36</i>&nbsp;    Patient updatePatient(int id,Patient patient);
+<i class="no-highlight">37</i>&nbsp;    void deletePatient(int id);
+<i class="no-highlight">38</i>&nbsp;    List&lt;Note&gt; getPatientNotes(int patId);
+<i class="no-highlight">39</i>&nbsp;    Note addPatientNote(int patId, Note note);
+<i class="no-highlight">40</i>&nbsp;    Assessment getPatientAssessment(int id);
+<i class="no-highlight">41</i>&nbsp;    PatientDTO getPatientAssessmentRiskById(int id);
+<i class="no-highlight">42</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-07-06 13:58</div>
+</div>
+</body>
+</html>

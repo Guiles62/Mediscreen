@@ -3,6 +3,7 @@ package com.oc.mediscreen.serviceTest;
 import com.oc.mediscreen.model.Assessment;
 import com.oc.mediscreen.model.Note;
 import com.oc.mediscreen.model.Patient;
+import com.oc.mediscreen.model.PatientDTO;
 import com.oc.mediscreen.proxy.DiagnosticProxy;
 import com.oc.mediscreen.proxy.HistoryProxy;
 import com.oc.mediscreen.proxy.PatientProxy;
@@ -10,6 +11,7 @@ import com.oc.mediscreen.service.impl.MediscreenServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
+import org.mockito.internal.matchers.Any;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
@@ -17,6 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
 @SpringBootTest
@@ -34,6 +38,9 @@ public class MediscreenServiceTest {
     @InjectMocks
     private Patient patient;
 
+    @InjectMocks
+    private PatientDTO patientDTO;
+
     List<Patient> patientList = new ArrayList<>();
     List<Note> noteList = new ArrayList<>();
 
@@ -44,6 +51,7 @@ public class MediscreenServiceTest {
         note = new Note();
         note.setCommentary("abcdef");
         patient = new Patient();
+        patient.setBirthday(LocalDate.of(1980,05,01));
         patientList.add(patient);
         noteList.add(note);
     }
@@ -102,5 +110,13 @@ public class MediscreenServiceTest {
         when(diagnosticProxy.getAssessmentById(1)).thenReturn(assessment);
         mediscreenService.getPatientAssessment(1);
         verify(diagnosticProxy,times(1)).getAssessmentById(1);
+    }
+
+    @Test
+    public void getPatientAssessmentRiskByIdTest() {
+        when(patientProxy.getPatientById(1)).thenReturn(Optional.ofNullable(patient));
+        when(diagnosticProxy.getAssessmentById(1)).thenReturn(assessment);
+        patientDTO = mediscreenService.getPatientAssessmentRiskById(1);
+        assertEquals(42,patientDTO.getAge());
     }
 }

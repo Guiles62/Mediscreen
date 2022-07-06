@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd32d4ce-30ad-459c-a73a-967f757066da.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd32d4ce-30ad-459c-a73a-967f757066da.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/history/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/serviceTest/MediscreenServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/serviceTest/MediscreenServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\guile\OneDrive\Bureau\Formation\P9\Mediscreen\Test Report" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,7 +85,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P4/PMOVE_Cliquet_Guillaume/PMOVE_01_code&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/Test Report&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -114,32 +123,74 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
-    <configuration name="DiagnosticControllerTest.getAssessmentByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diagnostic" />
+  <component name="RunManager" selected="JUnit.MediscreenServiceTest.getPatientAssessmentRiskByIdTest">
+    <configuration name="MediscreenServiceTest.getPatientAssessmentRiskByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.diagnostic.controllerTest.*" />
+          <option name="PATTERN" value="com.oc.mediscreen.serviceTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.diagnostic.controllerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.oc.diagnostic.controllerTest.DiagnosticControllerTest" />
-      <option name="METHOD_NAME" value="getAssessmentByIdTest" />
+      <option name="PACKAGE_NAME" value="com.oc.mediscreen.serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.oc.mediscreen.serviceTest.MediscreenServiceTest" />
+      <option name="METHOD_NAME" value="getPatientAssessmentRiskByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.oc.diagnostic.controllerTest in diagnostic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.oc.diagnostic in diagnostic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diagnostic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.oc.diagnostic.controllerTest.*" />
+          <option name="PATTERN" value="com.oc.diagnostic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.oc.diagnostic.controllerTest" />
+      <option name="PACKAGE_NAME" value="com.oc.diagnostic" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.oc.history in history" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="history" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.history.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.history" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.oc.mediscreen in mediscreen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.mediscreen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.mediscreen" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.oc.patient in patient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="patient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oc.patient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oc.patient" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,46 +237,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.history: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="history" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="mongodb" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.history: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="JUnit.DiagnosticControllerTest.getAssessmentByIdTest" />
-      <item itemvalue="JUnit.com.oc.diagnostic.controllerTest in diagnostic" />
+      <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentRiskByIdTest" />
+      <item itemvalue="JUnit.com.oc.diagnostic in diagnostic" />
+      <item itemvalue="JUnit.com.oc.history in history" />
+      <item itemvalue="JUnit.com.oc.mediscreen in mediscreen" />
+      <item itemvalue="JUnit.com.oc.patient in patient" />
       <item itemvalue="Spring Boot.DiagnosticApplication" />
       <item itemvalue="Spring Boot.MediscreenApplication" />
       <item itemvalue="Spring Boot.HistoryApplication" />
@@ -233,11 +250,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.history: Compose Deployment" />
-        <item itemvalue="JUnit.DiagnosticControllerTest.getAssessmentByIdTest" />
-        <item itemvalue="JUnit.com.oc.diagnostic.controllerTest in diagnostic" />
-        <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
+        <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentRiskByIdTest" />
+        <item itemvalue="JUnit.com.oc.diagnostic in diagnostic" />
+        <item itemvalue="JUnit.com.oc.mediscreen in mediscreen" />
+        <item itemvalue="JUnit.com.oc.patient in patient" />
+        <item itemvalue="JUnit.com.oc.history in history" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +354,15 @@
       <workItem from="1656681091161" duration="149000" />
       <workItem from="1656748990488" duration="611000" />
       <workItem from="1656918182913" duration="4138000" />
-      <workItem from="1656934292476" duration="1417000" />
+      <workItem from="1656934292476" duration="1715000" />
+      <workItem from="1657004457584" duration="943000" />
+      <workItem from="1657005582547" duration="5815000" />
+      <workItem from="1657013954960" duration="200000" />
+      <workItem from="1657107135545" duration="438000" />
+      <workItem from="1657107589273" duration="850000" />
+      <workItem from="1657108523576" duration="199000" />
+      <workItem from="1657110458757" duration="4426000" />
+      <workItem from="1657114919588" duration="1694000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -528,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656666445985</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Docker ok">
+      <created>1656935993568</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1656935993568</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,11 +614,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="Docker ok" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mediscreen$MediscreenServiceTest_getPatientAssessmentRiskByIdTest.ic" NAME="MediscreenServiceTest.getPatientAssessmentRiskByIdTest Coverage Results" MODIFIED="1657115785589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.oc.mediscreen.serviceTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_history_in_history.ic" NAME="com.oc.history in history Coverage Results" MODIFIED="1657108662385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.oc.history.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_diagnostic_in_diagnostic.ic" NAME="com.oc.diagnostic in diagnostic Coverage Results" MODIFIED="1657113875403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.oc.diagnostic.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Mediscreen$MediscreenControllerTest_getPatientAssessmentByIdTest.ic" NAME="MediscreenControllerTest.getPatientAssessmentByIdTest Coverage Results" MODIFIED="1655805210532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.mediscreen.controllerTest.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_patient_in_patient.ic" NAME="com.oc.patient in patient Coverage Results" MODIFIED="1657108693854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.oc.patient.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Mediscreen$HistoryControllerTest_addNoteTest.ic" NAME="HistoryControllerTest.addNoteTest Coverage Results" MODIFIED="1655114193944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.history.controllerTest.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_mediscreen_in_mediscreen.ic" NAME="com.oc.mediscreen in mediscreen Coverage Results" MODIFIED="1657111135380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.oc.mediscreen.*</FILTER>
     </SUITE>
   </component>
 </project>
