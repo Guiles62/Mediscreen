@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/history/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/history/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/main/java/com/oc/mediscreen/service/impl/MediscreenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/serviceTest/MediscreenServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/src/test/java/com/oc/mediscreen/serviceTest/MediscreenServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +85,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;2906b4861d3927c0ea67e215195b8641&quot;,
     &quot;two.files.diff.last.used.folder&quot;: &quot;C:/Users/guile/OneDrive/Bureau/Formation/P9/Mediscreen/patient/target/patient.jar!/BOOT-INF/lib&quot;
   },
@@ -123,7 +117,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MediscreenServiceTest.getPatientAssessmentRiskByIdTest">
+  <component name="RunManager" selected="JUnit.com.oc.mediscreen in mediscreen">
     <configuration name="MediscreenServiceTest.getPatientAssessmentRiskByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mediscreen" />
       <extension name="coverage">
@@ -250,11 +244,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentRiskByIdTest" />
-        <item itemvalue="JUnit.com.oc.diagnostic in diagnostic" />
         <item itemvalue="JUnit.com.oc.mediscreen in mediscreen" />
         <item itemvalue="JUnit.com.oc.patient in patient" />
         <item itemvalue="JUnit.com.oc.history in history" />
+        <item itemvalue="JUnit.com.oc.diagnostic in diagnostic" />
+        <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentRiskByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +356,14 @@
       <workItem from="1657107589273" duration="850000" />
       <workItem from="1657108523576" duration="199000" />
       <workItem from="1657110458757" duration="4426000" />
-      <workItem from="1657114919588" duration="1694000" />
+      <workItem from="1657114919588" duration="1807000" />
+      <workItem from="1657119325837" duration="2427000" />
+      <workItem from="1657122085145" duration="2203000" />
+      <workItem from="1657124690874" duration="505000" />
+      <workItem from="1657125543022" duration="571000" />
+      <workItem from="1657127402745" duration="145000" />
+      <workItem from="1657177880267" duration="1138000" />
+      <workItem from="1657180472379" duration="1035000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -560,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656935993568</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add test report">
+      <created>1657116714926</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1657116714926</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,28 +619,29 @@
     <MESSAGE value="add dockerfile BDD" />
     <MESSAGE value="mongo on docker" />
     <MESSAGE value="Docker ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker ok" />
+    <MESSAGE value="add test report" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test report" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mediscreen$MediscreenServiceTest_getPatientAssessmentRiskByIdTest.ic" NAME="MediscreenServiceTest.getPatientAssessmentRiskByIdTest Coverage Results" MODIFIED="1657115785589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.mediscreen.serviceTest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_history_in_history.ic" NAME="com.oc.history in history Coverage Results" MODIFIED="1657108662385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_history_in_history.ic" NAME="com.oc.history in history Coverage Results" MODIFIED="1657127438780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.history.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_diagnostic_in_diagnostic.ic" NAME="com.oc.diagnostic in diagnostic Coverage Results" MODIFIED="1657113875403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_diagnostic_in_diagnostic.ic" NAME="com.oc.diagnostic in diagnostic Coverage Results" MODIFIED="1657127420799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.diagnostic.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Mediscreen$MediscreenControllerTest_getPatientAssessmentByIdTest.ic" NAME="MediscreenControllerTest.getPatientAssessmentByIdTest Coverage Results" MODIFIED="1655805210532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.mediscreen.controllerTest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_patient_in_patient.ic" NAME="com.oc.patient in patient Coverage Results" MODIFIED="1657108693854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_patient_in_patient.ic" NAME="com.oc.patient in patient Coverage Results" MODIFIED="1657127470337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.patient.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Mediscreen$HistoryControllerTest_addNoteTest.ic" NAME="HistoryControllerTest.addNoteTest Coverage Results" MODIFIED="1655114193944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.history.controllerTest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_mediscreen_in_mediscreen.ic" NAME="com.oc.mediscreen in mediscreen Coverage Results" MODIFIED="1657111135380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Mediscreen$com_oc_mediscreen_in_mediscreen.ic" NAME="com.oc.mediscreen in mediscreen Coverage Results" MODIFIED="1657180493407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.oc.mediscreen.*</FILTER>
     </SUITE>
   </component>
