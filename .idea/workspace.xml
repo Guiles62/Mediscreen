@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4077e51e-41b2-4c7d-9f83-810376a7219e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +362,12 @@
       <workItem from="1657125543022" duration="571000" />
       <workItem from="1657127402745" duration="145000" />
       <workItem from="1657177880267" duration="1138000" />
-      <workItem from="1657180472379" duration="1035000" />
+      <workItem from="1657180472379" duration="1089000" />
+      <workItem from="1657181801989" duration="218000" />
+      <workItem from="1658218946477" duration="61000" />
+      <workItem from="1658220178180" duration="343000" />
+      <workItem from="1658220979253" duration="645000" />
+      <workItem from="1658223121359" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="feign ok">
       <created>1653655090289</created>
@@ -568,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657116714926</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add test report">
+      <created>1657181545278</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1657181545278</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
