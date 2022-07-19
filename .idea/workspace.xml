@@ -116,7 +116,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.oc.mediscreen in mediscreen">
+  <component name="RunManager" selected="JUnit.com.oc.diagnostic in diagnostic">
     <configuration name="MediscreenServiceTest.getPatientAssessmentRiskByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mediscreen" />
       <extension name="coverage">
@@ -243,10 +243,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.oc.diagnostic in diagnostic" />
         <item itemvalue="JUnit.com.oc.mediscreen in mediscreen" />
         <item itemvalue="JUnit.com.oc.patient in patient" />
         <item itemvalue="JUnit.com.oc.history in history" />
-        <item itemvalue="JUnit.com.oc.diagnostic in diagnostic" />
         <item itemvalue="JUnit.MediscreenServiceTest.getPatientAssessmentRiskByIdTest" />
       </list>
     </recent_temporary>
